@@ -8,8 +8,9 @@ const { isProduction } = require('./config/keys');
 
 
 require('./models/User');
+require('./config/passport');
 
-
+const passport = require('passport');
 const usersRouter = require('./routes/api/users');
 // const tweetsRouter = require('./routes/api/tweets');
 const csrfRouter = require('./routes/api/csrf');
@@ -20,6 +21,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(passport.initialize());
 
 // Security Middleware
 if (!isProduction) {
