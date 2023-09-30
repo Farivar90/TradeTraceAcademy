@@ -57,6 +57,7 @@ router.post('/register', async (req, res, next) => {
   });
 });
 
+// POST /api/users/login
 router.post('/login', async (req, res, next) => {
   passport.authenticate('local', async function(err, user) {
     if (err) return next(err);
