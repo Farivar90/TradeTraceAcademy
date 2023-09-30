@@ -4,12 +4,22 @@ const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
 const passport = require('passport');
-const { loginUser } = require('../../config/passport');
+const { loginUser, restoreUser } = require('../../config/passport');
+const { isProduction } = require('../../config/keys');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/current', restoreUser, (req, res) => {
+  if (!isProduction) {
+    // In development, allow React server to gain access to the CSRF token
+    // whenever the current user information is first loaded into the
+    // React application
+    const csrfToken = req.csrfToken();
+    res.cookie("CSRF-TOKEN", csrfToken);
+  }
+  if (!req.user) return res.json(null);
   res.json({
-    message: "GET /users"
+    _id: req.user._id,
+    username: req.user.username,
+    email: req.user.email
   });
 });
 
