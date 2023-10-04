@@ -16,9 +16,9 @@ function NavBar () {
     if (loggedIn) {
       return (
         <div className="links-nav">
-          <Link to={'/tweets'}>All Tweets</Link>
+          {/* <Link to={'/tweets'}>All Streams</Link> */}
           <Link to={'/profile'}>Profile</Link>
-          <Link to={'/tweets/new'}>Write a Tweet</Link>
+          <Link to={'/tweets/new'}>Write a Stream</Link>
           <button onClick={logoutUser}>Logout</button>
         </div>
       );
@@ -34,8 +34,12 @@ function NavBar () {
 
   return (
     <>
-      <h1>Chirper</h1>
+    <nav className="nav-bar">
+      <h1 className="logo">BuzzStream</h1>
+      <div className="nav-links">
       { getLinks() }
+      </div>
+      </nav>
     </>
   );
 }
