@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import './NavBar.css';
 import { logout } from '../../store/session';
+import navlogo from '../../assets/transTT.png'
 
 function NavBar () {
   const loggedIn = useSelector(state => !!state.session.user);
@@ -16,9 +17,7 @@ function NavBar () {
     if (loggedIn) {
       return (
         <div className="links-nav">
-          {/* <Link to={'/tweets'}>All Streams</Link> */}
           <Link to={'/profile'}>Profile</Link>
-          <Link to={'/tweets/new'}>Write a Stream</Link>
           <button onClick={logoutUser}>Logout</button>
         </div>
       );
@@ -35,9 +34,13 @@ function NavBar () {
   return (
     <>
     <nav className="nav-bar">
-      <h1 className="logo">BuzzStream</h1>
+      <div className="navlogo">
+        <Link to={'/'}>
+          <img src={navlogo} alt="navlogo" />
+        </Link>
+      </div>
       <div className="nav-links">
-      { getLinks() }
+          { getLinks() }
       </div>
       </nav>
     </>
