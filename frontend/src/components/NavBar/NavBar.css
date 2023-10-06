@@ -63,6 +63,6 @@
   }
   
   .nav-bar.scrolled {
-    background-color: rgb(57, 57, 57); /* Or any other color you prefer */
+    background-color: rgb(30, 30, 30); /* Or any other color you prefer */
     transition: background-color 0.3s ease; /* Smooth transition */
 }

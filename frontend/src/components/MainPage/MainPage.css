@@ -28,3 +28,17 @@
     width: 100%;
     height: auto;
 }
+
+.info-mainbg {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  position: absolute;
+  top: 30%;
+  color: aliceblue;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  z-index: 1;
+  font-size: 200%;
+}
+
