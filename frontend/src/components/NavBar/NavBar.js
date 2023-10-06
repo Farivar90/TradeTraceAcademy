@@ -3,15 +3,34 @@ import { useSelector, useDispatch } from 'react-redux';
 import './NavBar.css';
 import { logout } from '../../store/session';
 import navlogo from '../../assets/transTT.png'
+import React, { useEffect, useState } from 'react';
 
 function NavBar () {
   const loggedIn = useSelector(state => !!state.session.user);
   const dispatch = useDispatch();
+  const [scrolled, setScrolled] = useState(false);
   
   const logoutUser = e => {
       e.preventDefault();
       dispatch(logout());
   }
+
+  useEffect(() => {
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 50) { // You can adjust this value
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+        // Cleanup the event listener on component unmount
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
 
   const getLinks = () => {
     if (loggedIn) {
@@ -37,7 +56,7 @@ function NavBar () {
 
   return (
     <>
-    <nav className="nav-bar">
+    <nav className={`nav-bar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navlogo">
         <Link to={'/'}>
           <img src={navlogo} alt="navlogo" />

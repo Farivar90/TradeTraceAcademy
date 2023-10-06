@@ -3,9 +3,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 10px 20px; */
-    background-color: #333;
-    color: white;
+    position: fixed;
+    top: 0;          
+    left: 0;          
+    width: 100%;
+    z-index: 1000;
   }
   
   .navlogo {
@@ -31,7 +33,7 @@
   
   .links-nav a, .links-auth a {
     text-decoration: none;
-    color: white;
+    /* color: white; */
     padding: 5px 10px;
     border-radius: 4px;
     transition: background-color 0.3s;
@@ -41,31 +43,26 @@
     background-color: rgba(255, 255, 255, 0.1);
   }
   
-  button {
-    background-color: #f44336; /* Red color for the logout button */
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #d32f2f; /* Darker red on hover */
-  }
-  
   .signup, .login {
     display: flex;
     align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: aliceblue;
   }
   
   /* If you want to give different styles to signup and login links, you can target them specifically using their class names */
   .signup a {
-    /* Styles specific to signup link */
+    color: aliceblue;
   }
   
   .login a {
-    /* Styles specific to login link */
+    color: aliceblue;
   }
   
+  .nav-bar.scrolled {
+    background-color: rgb(57, 57, 57); /* Or any other color you prefer */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
