@@ -3,6 +3,7 @@ import './MainPage.css';
 import bg from '../../assets/fed-day.jpg';
 import AnimatedSVG from '../Loading/ALoader';
 
+
 function MainPage() {
     const overlayRef = useRef(null);
     const infoRef = useRef(null);
@@ -37,7 +38,7 @@ function MainPage() {
                 </div>
             </div>
             <div>
-              
+
             </div>
             
             <footer className="footer-m">&copy; 2023 F.A Financial Department</footer>

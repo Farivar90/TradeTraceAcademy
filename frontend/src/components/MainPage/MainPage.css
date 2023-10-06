@@ -31,7 +31,7 @@
 
 .info-mainbg {
   opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Smooth transition */
+  transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
   top: 30%;
   color: aliceblue;
@@ -40,5 +40,6 @@
   padding: 20px;
   z-index: 1;
   font-size: 200%;
+  font-weight: bold;
 }
 
