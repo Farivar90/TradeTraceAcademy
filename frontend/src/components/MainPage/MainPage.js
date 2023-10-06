@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './MainPage.css';
 import bg from '../../assets/fed-day.jpg';
+import AnimatedSVG from '../Loading/ALoader';
 
 function MainPage() {
     const overlayRef = useRef(null);
@@ -35,6 +36,10 @@ function MainPage() {
                   <h1 className='info-mainbg' ref={infoRef}>the Marriner S. Eccles Federal Reserve Board Building</h1>
                 </div>
             </div>
+            <div>
+              
+            </div>
+            
             <footer className="footer-m">&copy; 2023 F.A Financial Department</footer>
         </div>
     );
