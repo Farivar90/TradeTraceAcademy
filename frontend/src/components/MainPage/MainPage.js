@@ -11,12 +11,13 @@ function MainPage() {
 
     useEffect(() => {const handleScroll = () => {
       const offset = window.scrollY;
-      const opacity = Math.min(offset / 200, 1); // Cap at 1 for 100% opacity
+      const opacity = Math.min(offset / 500, 1); // Cap at 1 for 100% opacity
+      const opacity1 = Math.min(offset / 100, 1);
       if (overlayRef.current) {
           overlayRef.current.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
       }
       if (infoRef.current) {
-          infoRef.current.style.opacity = opacity;
+          infoRef.current.style.opacity = opacity1;
       }
   };
   
