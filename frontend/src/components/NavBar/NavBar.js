@@ -44,10 +44,10 @@ function NavBar () {
       return (
         <div className="links-auth">
           <div className='signup'>
-            <Link to={'/signup'}>Signup</Link>
+            <Link to={'/signup'} className="glow-on-hover">Signup</Link>
           </div>
           <div className='login'>
-            <Link to={'/login'}>Login</Link>
+            <Link to={'/login'} className="glow-on-hover">Login</Link>
           </div>
         </div>
       );
