@@ -48,7 +48,7 @@
     align-items: center;
     gap: 10px;
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius:1cqw;
     transition: background-color 0.3s;
   }
   
@@ -86,7 +86,7 @@
 
 .glow-on-hover:before {
   content: '';
-  background: linear-gradient(45deg,#fffb00, #48ff00, #00ffd5, #002bff, #7a00ff);
+  background: linear-gradient(25deg, #48ff00, #00ffd5, #002bff, #001ba4);
   position: absolute;
   top: -2px;
   left:-2px;

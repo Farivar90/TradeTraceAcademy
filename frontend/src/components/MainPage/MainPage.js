@@ -39,7 +39,7 @@ function MainPage() {
                 </div>
             </div>
             <div>
-
+                <AnimatedSVG/>
             </div>
             
             <footer className="footer-m">&copy; 2023 F.A Financial Department</footer>

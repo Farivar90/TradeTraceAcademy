@@ -11,7 +11,7 @@ const AnimatedSVG = () => {
             toArray = s => gsap.utils.toArray(s),
             mainSVG = select('#mainSVG'),
             allEll = toArray('.ell'),
-            colorArr = ['#359EEE', '#FFC43D','#EF476F','#03CEA4']
+            colorArr = ['#48ff00', '#00ffd5','#002bff','#001ba4']
 
         let colorInterp = gsap.utils.interpolate(colorArr);
 
@@ -83,10 +83,10 @@ const AnimatedSVG = () => {
     
     <linearGradient id="aiGrad" x1="513.98" y1="290" x2="479.72" y2="320" gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="#000" stop-opacity="0" />
-        <stop offset=".15" stop-color="#EF476F" />
-        <stop offset=".4" stop-color="#359eee" />
-        <stop offset=".6" stop-color="#03cea4" />
-        <stop offset=".78" stop-color="#FFC43D" />
+        <stop offset=".15" stop-color="#48ff00" />
+        <stop offset=".4" stop-color="#00ffd5" />
+        <stop offset=".6" stop-color="#002bff" />
+        <stop offset=".78" stop-color="#001ba4" />
         <stop offset="1" stop-color="#000" stop-opacity="0" />
     </linearGradient>
 
