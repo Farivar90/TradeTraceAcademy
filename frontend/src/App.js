@@ -72,6 +72,7 @@ function App() {
       ) : (
         <AnimatedSVG />
       )}
+       <footer className="footer-m">&copy; 2023 F.A Financial Department</footer>
     </>
   );
 }

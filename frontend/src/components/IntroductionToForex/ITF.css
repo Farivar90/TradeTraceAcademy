@@ -1,0 +1,55 @@
+.wif {
+    background-color: rgb(40, 40, 40);
+}
+
+.wif img {
+    width: 100%;
+}
+
+.wif h1 {
+    text-align: center;
+    color: #2b00ff;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.wif p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    color: #fff;
+}
+
+.wif h3 {
+    text-align: center;
+    color: #0015b2;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.wif h4 {
+    color: #00ff22;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.wif h5 {
+    color: #002aff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#ffp {
+    color: #00c400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

@@ -1,9 +1,13 @@
 import './ITF.css';
+import atc from '../../assets/ATC-Forex.png';
+import 'animate.css';
+
 
 const WhatIsForex = () =>{
     return (
         <div className='wif'>
-            <h1>What is forex?</h1>
+            <img className='atcbg' src={atc} alt="atcbg" />
+            <h1 class='animate__animated animate__bounceInLeft'>What is Forex?</h1>
             <h4>4-minute read</h4>
             <p>The foreign exchange market – also known as forex or FX – is the world’s most traded market.
                 <br />
@@ -40,9 +44,10 @@ const WhatIsForex = () =>{
             <h3>Is forex trading right for me?</h3>
             <p>Forex trading is ideal for investors who want the opportunity to trade a market that is open 24 hours a day, while minimizing trading costs and potentially profiting from markets that are rising or falling. However, it contains significant risks to your money and is not suitable for everyone.</p>
             <h5>Forex trading is ideal for people who:</h5>
-            <p>Are looking for short-term opportunities. FX traders typically hold positions for a few days or weeks, rather than over the long term, with some only seeking to be in the trade for minutes or hours</p>
-            <p>Want to make their own decisions. Most forex brokers provide an execution-only service. That means they do not advise you on what to trade on and do not trade on your behalf</p>
-            <p>Are looking to diversify their portfolio. Trading currencies can be a great way of getting global exposure</p>
+            <p id='ffp'>1. Are looking for short-term opportunities. FX traders typically hold positions for a few days or weeks, rather than over the long term, with some only seeking to be in the trade for minutes or hours</p>
+            <p id='ffp'>2. Want to make their own decisions. Most forex brokers provide an execution-only service. That means they do not advise you on what to trade on and do not trade on your behalf</p>
+            <p id='ffp'>3. Are looking to diversify their portfolio. Trading currencies can be a great way of getting global exposure</p>
+            
         </div>
     );
 };
