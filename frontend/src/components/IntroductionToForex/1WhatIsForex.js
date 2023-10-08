@@ -1,14 +1,21 @@
 import './ITF.css';
-import atc from '../../assets/ATC-Forex.png';
+import atc from '../../assets/wifbg.gif';
 import 'animate.css';
 
 
 const WhatIsForex = () =>{
+    const closeVideo = () => {
+        // If you're using refs with React:
+        const checkbox = document.querySelector('.checkbox-wif');
+        if (checkbox) checkbox.checked = false;
+    };
     return (
         <div className='wif'>
-            <img className='atcbg' src={atc} alt="atcbg" />
-            <h1 class='animate__animated animate__bounceInLeft'>What is Forex?</h1>
-            <h4>4-minute read</h4>
+            <div className="imageContainer">
+                <img className='atcbg' src={atc} alt="atcbg" />
+                <h1 class='animate__animated animate__bounceInLeft'>What is Forex?</h1>
+            </div>
+            <h4 class='animate__animated animate__bounceIn'>3 minutes read</h4>
             <p>The foreign exchange market – also known as forex or FX – is the world’s most traded market.
                 <br />
                 According to the Bank for International Settlements, global forex trading in 2022 averaged over $7.5 trillion each day. To put that into context, trading on the stock market averages around $553 billion each month.
@@ -47,7 +54,25 @@ const WhatIsForex = () =>{
             <p id='ffp'>1. Are looking for short-term opportunities. FX traders typically hold positions for a few days or weeks, rather than over the long term, with some only seeking to be in the trade for minutes or hours</p>
             <p id='ffp'>2. Want to make their own decisions. Most forex brokers provide an execution-only service. That means they do not advise you on what to trade on and do not trade on your behalf</p>
             <p id='ffp'>3. Are looking to diversify their portfolio. Trading currencies can be a great way of getting global exposure</p>
-            
+            <div className='wrapper-wif'>
+                <input type="checkbox" className="checkbox-wif" />
+                <div className="video-wif">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WkwOfNCRi38?si=NpglCNLa0WRXMk3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <button className="close-video" onClick={closeVideo}>Close Video</button>
+                </div>
+                <div className="text-wif">
+                    <span data-text="Watch the video"></span>
+                </div>
+            </div>
+            <div className='back-to-int'>
+                <a href="/IntroductionToForex">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Back to Introduction page
+                </a>
+            </div>
         </div>
     );
 };
