@@ -1,0 +1,107 @@
+.scroll-up-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    cursor: pointer;
+    background: #363636;
+    color: #fbfbfb;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    padding: 0.7rem 0.7rem;
+    transition: 0.2s;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  
+  .scroll-up-btn:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: #0FF0FC;
+    color: #0FF0FC;
+    animation: box 3s infinite;
+    border-radius: 5px;
+    box-shadow: 0 0 35px #0FF0FC;
+  }
+  
+  .scroll-up-btn::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #363636;
+  }
+  
+  .scroll-up-btn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .scroll-up-btn i {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+  
+  .scroll-up-btn i::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #39FF14;
+    transition: 0.2s;
+  }
+  
+  .scroll-up-btn:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+  }
+  
+  .scroll-up-btn i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #39FF14;
+    transition: 0.2s;
+  }
+  
+  .scroll-up-btn:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes box {
+    0% {
+      box-shadow: #6d6dff;
+    }
+    50% {
+      box-shadow: 0 0 25px var(--clr);
+    }
+    100% {
+      box-shadow: #0000ff;
+    }
+  }
+  

@@ -87,7 +87,7 @@ const AnimatedSVG = () => {
         <stop offset=".4" stop-color="#00ffd5" />
         <stop offset=".6" stop-color="#002bff" />
         <stop offset=".78" stop-color="#001ba4" />
-        <stop offset="1" stop-color="#48ff00" stop-opacity="1" />
+        <stop offset="1" stop-color="#00ffd5" stop-opacity="1" />
     </linearGradient>
 
 </defs>

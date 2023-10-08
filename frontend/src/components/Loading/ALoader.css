@@ -8,3 +8,10 @@ svg {
    .ell, #ai {
        fill: none;
    }
+
+   .animated-svg-container {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(20, 20, 20, 0.9); /* Optional: white background with slight transparency */
+  }
+  

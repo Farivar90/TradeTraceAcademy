@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+.introduction-to-forex-page {
+    overflow-x: hidden;
+    background: #50e5ff;
+    min-height: 100vh;
+}
+
+.forex-parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.forex-parallax img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#forex-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    color: #112434;
+}
+
+.forex-sec {
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.forex-sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.forex-sec h3 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.forex-sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}

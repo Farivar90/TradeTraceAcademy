@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Switch } from 'react-router-dom';
-
 import { AuthRoute, ProtectedRoute } from './components/Routes/Routes';
 import NavBar from './components/NavBar/NavBar';
-
 import MainPage from './components/MainPage/MainPage';
 import LoginForm from './components/SessionForms/LoginForm';
 import SignupForm from './components/SessionForms/SignupForm';
 import Profile from './components/Profile/Profile';
-
 import { getCurrentUser } from './store/session';
+import AnimatedSVG from  './components/Loading/ALoader';
+import IntroductionToForex from './components/IntroductionToForex/IntroductionToForex';
+import WhatIsForex from './components/IntroductionToForex/1WhatIsForex';
+import './App.css';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -44,35 +45,32 @@ function App() {
     });
   };
 
-  return loaded && (
+  return (
     <>
-      <NavBar />
-      <Switch>
-        <AuthRoute exact path="/" component={MainPage} />
-        <AuthRoute exact path="/login" component={LoginForm} />
-        <AuthRoute exact path="/signup" component={SignupForm} />
-        <ProtectedRoute exact path="/profile" component={Profile} />
-      </Switch>
-      {showButton && (
-        <div 
-          id="button" 
-          style={{
-            display: 'inline-block',
-            backgroundColor: '#001ba4',
-            width: '40px',
-            height: '40px',
-            textAlign: 'center',
-            borderRadius: '4px',
-            position: 'fixed',
-            bottom: '30px',
-            right: '30px',
-            zIndex: 1000,
-            cursor: 'pointer'
-          }}
-          onClick={scrollToTop}
-        >
-          <i className="fas fa-angle-up" style={{fontSize: '32px', color: 'white'}}></i>
-        </div>
+      {loaded ? (
+        <>
+          <NavBar />
+          <Switch>
+            <AuthRoute exact path="/" component={MainPage} />
+            <AuthRoute exact path="/login" component={LoginForm} />
+            <AuthRoute exact path="/signup" component={SignupForm} />
+            <AuthRoute exact path="/IntroductionToForex" component={IntroductionToForex} />
+            <AuthRoute exact path="/IntroductionToForex/WhatIsForex" component={WhatIsForex} />
+            <ProtectedRoute exact path="/profile" component={Profile} />
+          </Switch>
+          {showButton && (
+  <button 
+    className="scroll-up-btn"
+    onClick={scrollToTop}
+  >
+    <span className="fas fa-angle-up" style={{fontSize: '32px', color: 'white'}}></span>
+    <i></i>
+  </button>
+)}
+
+        </>
+      ) : (
+        <AnimatedSVG />
       )}
     </>
   );
