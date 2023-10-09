@@ -12,6 +12,7 @@ import AnimatedSVG from  './components/Loading/ALoader';
 import IntroductionToForex from './components/IntroductionToForex/IntroductionToForex';
 import WhatIsForex from './components/IntroductionToForex/1WhatIsForex';
 import MajorCurrencyPairs from './components/IntroductionToForex/2MajorCurrencyPairs';
+import ForexMarketHours from './components/IntroductionToForex/3ForexMarketHours';
 import './App.css';
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
             <AuthRoute exact path="/IntroductionToForex" component={IntroductionToForex} />
             <AuthRoute exact path="/IntroductionToForex/WhatIsForex" component={WhatIsForex} />
             <AuthRoute exact path="/IntroductionToForex/MajorCurrencyPairs" component={MajorCurrencyPairs} />
+            <AuthRoute exact path="/IntroductionToForex/ForexMarketHours" component={ForexMarketHours} />
             <ProtectedRoute exact path="/profile" component={Profile} />
           </Switch>
           {showButton && (
