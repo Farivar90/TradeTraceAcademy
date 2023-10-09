@@ -8,7 +8,6 @@ import t1 from "../../assets/t1.png";
 import t2 from "../../assets/t2.png";
 import man from "../../assets/man.png";
 import plants from "../../assets/plants.png";
-import { Brush, CodeSlash, Search } from 'react-ionicons';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -81,9 +80,9 @@ const IntroductionToForex = () => {
             <div className="itf-container">
     <div className="itf-box" style={{ "--clr": "#89ec5b" }}>
         <div className="itf-content">
-            <div className="itf-icon"><ion-icon name="brush"></ion-icon></div>
+            <div className="itf-icon"><ion-icon name="search"></ion-icon></div>
             <div className="itf-text">
-                <h3>What is Forex?</h3>
+                <h3>1. What is Forex?</h3>
                 <p>The foreign exchange market – also known as forex or FX – is the world’s most traded market.</p>
                 <a href="/IntroductionToForex/WhatIsForex">Read More</a>
             </div>
@@ -91,9 +90,9 @@ const IntroductionToForex = () => {
     </div>
     <div className="itf-box" style={{ "--clr": "#00ffe1" }}>
     <div class="itf-content">
-                <div class="itf-icon"><ion-icon name="code-slash"></ion-icon></div>
+                <div class="itf-icon"><ion-icon name="logo-usd"></ion-icon></div>
                 <div class="itf-text">
-                    <h3>Major Currency Pairs</h3>
+                    <h3>2. Major Currency Pairs</h3>
                     <p>The major currency pairs are some of the most popular currency combinations in the forex market. Prices in these pairs often move in tighter bands, but their movements can still be volatile</p>
                     <a href="/IntroductionToForex/MajorCurrencyPairs">Read More</a>
                 </div>
@@ -101,15 +100,25 @@ const IntroductionToForex = () => {
     </div>
     <div className="itf-box" style={{ "--clr": "#5b98eb" }}>
     <div class="itf-content">
-                <div class="itf-icon"><ion-icon name="search"></ion-icon></div>
+                <div class="itf-icon"><ion-icon name="time-outline"></ion-icon></div>
                 <div class="itf-text">
-                    <h3>Forex Market Hours</h3>
+                    <h3>3. Forex Market Hours</h3>
                     <p>The forex market is open 24 hours a day during the weekdays which allows traders to potentially trade all day and all night.</p>
                     <a href="/IntroductionToForex/ForexMarketHours">Read More</a>
                 </div>
             </div>
     </div>
+<div className='back-to-int'>
+                <a href="/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Back to Main
+                </a>
+            </div>
 </div>
+
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
