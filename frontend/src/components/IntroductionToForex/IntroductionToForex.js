@@ -107,9 +107,12 @@ const IntroductionToForex = () => {
                     <a href="/IntroductionToForex/ForexMarketHours">Read More</a>
                 </div>
             </div>
-    </div>
-<div className='back-to-int'>
-                <a href="/">
+            </div>
+        </div>
+
+        <div className="itf-container">
+            <div className='back-to-int'>
+                <a href="/IntroductionToForex">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -117,9 +120,7 @@ const IntroductionToForex = () => {
                     Back to Main
                 </a>
             </div>
-</div>
-
-
+        </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
     
