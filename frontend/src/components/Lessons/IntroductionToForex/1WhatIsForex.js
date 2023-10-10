@@ -8,6 +8,7 @@ const WhatIsForex = () =>{
         // If you're using refs with React:
         const checkbox = document.querySelector('.checkbox-wif');
         if (checkbox) checkbox.checked = false;
+        
     };
     return (
         <div className='wif'>
@@ -15,6 +16,7 @@ const WhatIsForex = () =>{
                 <img className='atcbg' src={atc} alt="atcbg" />
                 <h1 class='animate__animated animate__bounceInLeft'>What is Forex?</h1>
             </div>
+            <div className='wif-content'>
             <h4 class='animate__animated animate__bounceIn'>3 minutes read</h4>
             <p>The foreign exchange market – also known as forex or FX – is the world’s most traded market.
                 <br />
@@ -72,6 +74,7 @@ const WhatIsForex = () =>{
                     <span></span>
                     Back to Introduction page
                 </a>
+            </div>
             </div>
         </div>
     );

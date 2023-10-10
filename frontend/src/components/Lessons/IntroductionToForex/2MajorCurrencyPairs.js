@@ -15,6 +15,7 @@ const MajorCurrencyPairs = () =>{
                 <img className='atcbg' src={mcp} alt="atcbg" />
                 <h1 class='animate__animated animate__bounceInLeft'>Major Currency Pairs</h1>
             </div>
+            <div className='wif-content'>
             <h4 class='animate__animated animate__bounceIn'>5 minutes read</h4>
             <p>
                 The major currency pairs are some of the most popular currency combinations in the forex market. Prices in these pairs often move in tighter bands, but their movements can still be volatile. Learn about the major forex pairs here.
@@ -79,6 +80,7 @@ const MajorCurrencyPairs = () =>{
                     <span></span>
                     Back to Introduction page
                 </a>
+            </div>
             </div>
         </div>
     );

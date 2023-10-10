@@ -17,6 +17,7 @@ const ForexMarketHours = () =>{
                 <img className='atcbg' src={atc} alt="atcbg" />
                 <h1 class='animate__animated animate__bounceInLeft'>Forex Market Hours</h1>
             </div>
+            <div className='wif-content'>
             <h4 class='animate__animated animate__bounceIn'>7 minutes read</h4>
             <p>The forex market is open 24 hours a day during the weekdays which allows traders to potentially trade all day and all night.
                 <br />
@@ -96,6 +97,7 @@ const ForexMarketHours = () =>{
                     Back to Introduction page
                 </a>
             </div>
+        </div>
         </div>
 
     );

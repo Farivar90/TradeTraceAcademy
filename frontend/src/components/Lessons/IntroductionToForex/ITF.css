@@ -1,8 +1,8 @@
 .wif {
     background-color: rgb(40, 40, 40);
     padding-bottom: 10%;
-    padding-right: 5%;
-    padding-left: 5%;
+    /* padding-right: 5%;
+    padding-left: 5%; */
 }
 
 .imageContainer {
@@ -15,6 +15,11 @@
 .wif img {
     width: 100%;
     display: block; /* This removes the default margin at the bottom of the image */
+}
+
+.wif-content {
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .wif h1 {
@@ -110,7 +115,7 @@
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
-    z-index: 9;
+    z-index: 1;
   }
 
   .wrapper-wif .text-wif {
@@ -325,20 +330,20 @@
 
 
 .close-video {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: rgb(0, 251, 255);
+  position:fixed;
+  top: 17%;
+  right: 1%;
+  background-color: #2196f3;
   color: rgb(0, 0, 0);
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 999;
 }
 
 .close-video:hover {
-  background-color: rgba(0, 255, 68, 0.8);
+  background-color: #00c400;
 }
 
 .fmh-ses {
