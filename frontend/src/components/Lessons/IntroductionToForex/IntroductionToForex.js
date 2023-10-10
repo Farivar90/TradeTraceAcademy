@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './IntroductionToForex.css';
-import m1 from '../../assets/m1.png';
-import m2 from '../../assets/m2.png';
-import t1 from "../../assets/t1.png";
-import t2 from "../../assets/t2.png";
-import man from "../../assets/man.png";
-import plants from "../../assets/plants.png";
+import m1 from '../../../assets/m1.png';
+import m2 from '../../../assets/m2.png';
+import t1 from "../../../assets/t1.png";
+import t2 from "../../../assets/t2.png";
+import man from "../../../assets/man.png";
+import plants from "../../../assets/plants.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -84,7 +84,7 @@ const IntroductionToForex = () => {
             <div className="itf-text">
                 <h3>1. What is Forex?</h3>
                 <p>The foreign exchange market – also known as forex or FX – is the world’s most traded market.</p>
-                <a href="/IntroductionToForex/WhatIsForex">Read More</a>
+                <a href="/Lessons/IntroductionToForex/WhatIsForex">Read More</a>
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@ const IntroductionToForex = () => {
                 <div class="itf-text">
                     <h3>2. Major Currency Pairs</h3>
                     <p>The major currency pairs are some of the most popular currency combinations in the forex market. Prices in these pairs often move in tighter bands, but their movements can still be volatile</p>
-                    <a href="/IntroductionToForex/MajorCurrencyPairs">Read More</a>
+                    <a href="/Lessons/IntroductionToForex/MajorCurrencyPairs">Read More</a>
                 </div>
             </div>
     </div>
@@ -104,7 +104,7 @@ const IntroductionToForex = () => {
                 <div class="itf-text">
                     <h3>3. Forex Market Hours</h3>
                     <p>The forex market is open 24 hours a day during the weekdays which allows traders to potentially trade all day and all night.</p>
-                    <a href="/IntroductionToForex/ForexMarketHours">Read More</a>
+                    <a href="/Lessons/IntroductionToForex/ForexMarketHours">Read More</a>
                 </div>
             </div>
             </div>
@@ -112,12 +112,12 @@ const IntroductionToForex = () => {
 
         <div className="itf-container">
             <div className='back-to-int'>
-                <a href="/IntroductionToForex">
+                <a href="/Lessons">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    Back to Main
+                    Back to Lessons
                 </a>
             </div>
         </div>

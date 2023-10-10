@@ -1,5 +1,5 @@
 import './ITF.css';
-import mcp from '../../assets/mcp.gif';
+import mcp from '../../../assets/mcp.gif';
 import 'animate.css';
 
 const MajorCurrencyPairs = () =>{
@@ -72,7 +72,7 @@ const MajorCurrencyPairs = () =>{
                 </div>
             </div>
             <div className='back-to-int'>
-                <a href="/IntroductionToForex">
+                <a href="/Lessons/IntroductionToForex">
                     <span></span>
                     <span></span>
                     <span></span>

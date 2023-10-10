@@ -1,8 +1,8 @@
 import './ITF.css';
-import atc from '../../assets/fmh.gif';
-import ses from '../../assets/sessions.png';
-import ses2 from '../../assets/ses2.png';
-import ses3 from '../../assets/ses3.png';
+import atc from '../../../assets/fmh.gif';
+import ses from '../../../assets/sessions.png';
+import ses2 from '../../../assets/ses2.png';
+import ses3 from '../../../assets/ses3.png';
 import 'animate.css';
 
 const ForexMarketHours = () =>{
@@ -88,7 +88,7 @@ const ForexMarketHours = () =>{
                 </div>
             </div>
             <div className='back-to-int'>
-                <a href="/IntroductionToForex">
+                <a href="/Lessons/IntroductionToForex">
                     <span></span>
                     <span></span>
                     <span></span>

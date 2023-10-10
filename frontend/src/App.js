@@ -9,10 +9,15 @@ import SignupForm from './components/SessionForms/SignupForm';
 import Profile from './components/Profile/Profile';
 import { getCurrentUser } from './store/session';
 import AnimatedSVG from  './components/Loading/ALoader';
-import IntroductionToForex from './components/IntroductionToForex/IntroductionToForex';
-import WhatIsForex from './components/IntroductionToForex/1WhatIsForex';
-import MajorCurrencyPairs from './components/IntroductionToForex/2MajorCurrencyPairs';
-import ForexMarketHours from './components/IntroductionToForex/3ForexMarketHours';
+import Lessons from './components/Lessons/Lessons';
+import IntroductionToForex from './components/Lessons/IntroductionToForex/IntroductionToForex';
+import WhatIsForex from './components/Lessons/IntroductionToForex/1WhatIsForex';
+import MajorCurrencyPairs from './components/Lessons/IntroductionToForex/2MajorCurrencyPairs';
+import ForexMarketHours from './components/Lessons/IntroductionToForex/3ForexMarketHours';
+import FundamentalAnalysis from './components/Lessons/FundamentalAnalysis/FundamentalAnalysis';
+import TechnicalAnalysis from './components/Lessons/TechnicalAnalysis/TechnicalAnalysis';
+import TradingPsychology from './components/Lessons/TradingPsychology/TradingPsychology';
+import TradingPlatforms from './components/Lessons/TradingPlatforms/TradingPlatforms';
 import './App.css';
 
 function App() {
@@ -56,10 +61,15 @@ function App() {
             <AuthRoute exact path="/" component={MainPage} />
             <AuthRoute exact path="/login" component={LoginForm} />
             <AuthRoute exact path="/signup" component={SignupForm} />
-            <AuthRoute exact path="/IntroductionToForex" component={IntroductionToForex} />
-            <AuthRoute exact path="/IntroductionToForex/WhatIsForex" component={WhatIsForex} />
-            <AuthRoute exact path="/IntroductionToForex/MajorCurrencyPairs" component={MajorCurrencyPairs} />
-            <AuthRoute exact path="/IntroductionToForex/ForexMarketHours" component={ForexMarketHours} />
+            <AuthRoute exact path="/Lessons" component={Lessons} />
+            <AuthRoute exact path="/Lessons/IntroductionToForex" component={IntroductionToForex} />
+            <AuthRoute exact path="/Lessons/FundamentalAnalysis" component={FundamentalAnalysis} />
+            <AuthRoute exact path="/Lessons/TechnicalAnalysis" component={TechnicalAnalysis} />
+            <AuthRoute exact path="/Lessons/TradingPsychology" component={TradingPsychology} />
+            <AuthRoute exact path="/Lessons/TradingPlatforms" component={TradingPlatforms} />
+            <AuthRoute exact path="/Lessons/IntroductionToForex/WhatIsForex" component={WhatIsForex} />
+            <AuthRoute exact path="/Lessons/IntroductionToForex/ForexMarketHours" component={ForexMarketHours} />
+            <AuthRoute exact path="/Lessons/IntroductionToForex/MajorCurrencyPairs" component={MajorCurrencyPairs} />
             <ProtectedRoute exact path="/profile" component={Profile} />
           </Switch>
           {showButton && (

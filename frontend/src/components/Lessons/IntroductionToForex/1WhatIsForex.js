@@ -1,5 +1,5 @@
 import './ITF.css';
-import atc from '../../assets/wifbg.gif';
+import atc from '../../../assets/wifbg.gif';
 import 'animate.css';
 
 
@@ -65,7 +65,7 @@ const WhatIsForex = () =>{
                 </div>
             </div>
             <div className='back-to-int'>
-                <a href="/IntroductionToForex">
+                <a href="/Lessons/IntroductionToForex">
                     <span></span>
                     <span></span>
                     <span></span>

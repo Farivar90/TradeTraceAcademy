@@ -39,7 +39,6 @@ function MainPage() {
                 </div>
             </div>
             <div>
-                <AnimatedSVG/>
             </div>
         </div>
     );
