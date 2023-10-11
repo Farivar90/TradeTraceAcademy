@@ -1,7 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import './MainPage.css';
 import bg from '../../assets/fed-day.jpg';
+import lessons from '../../assets/lessons.gif'
+import forum from '../../assets/forum.gif'
+import news from '../../assets/news.gif'
 import AnimatedSVG from '../Loading/ALoader';
+import { Link } from 'react-router-dom';
+
 
 
 function MainPage() {
@@ -48,6 +53,34 @@ function MainPage() {
                     A Trace Today, A Trade Tomorrow
                     </h2>
                 </div>
+                <div className='main-cards-1st'>
+                    <div class="card1">
+                <Link to="/lessons" className="no-underline">
+                        <img src={lessons} alt="Lessons" />
+                        <h3>Lessons</h3>
+                        <p>A structured educational hub teaching the essentials of Forex trading, from basics to advanced techniques.</p>
+                </Link>
+                    </div>
+                    <div class="card2">
+                <Link to="/lessons" className="no-underline">
+                        <img src={news} alt="News" />
+                        <h3>News</h3>
+                        <p>Real-time updates on Forex market events, providing insights and analysis on currency movements and global impacts.</p>
+                </Link>
+                    </div>
+                    <div class="card3">
+                <Link to="/lessons" className="no-underline">
+                        <img src={forum} alt="Forum" />
+                        <h3>Forum</h3>
+                        <p>A community space for traders to discuss experiences, seek advice, and share insights on Forex trading strategies.</p>
+                </Link>
+                    </div>
+                </div>
+                    <div className='after-c'>
+                        <h1>
+                            ttt
+                        </h1>
+                    </div>
         </div>
     );
 }
