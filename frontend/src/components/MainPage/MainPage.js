@@ -32,7 +32,7 @@ function MainPage() {
     return (
         <div className="main-page">
             <div className='bg-main'>
-                <img src={bg} alt="background picture (fed building)" />
+                <img src={bg} alt="background picture - fed building" />
                 <div className="bg-overlay" ref={overlayRef}></div>
                 <div>
                   <h1 className='info-mainbg' ref={infoRef}>the Marriner S. Eccles Federal Reserve Board Building</h1>
@@ -40,6 +40,14 @@ function MainPage() {
             </div>
             <div>
             </div>
+                <div className='main-t1'>
+                    <h1 className='text-pop-up-br'>
+                    TradeTrace Academy
+                    </h1>
+                    <h2 className='slogan-main'>
+                    A Trace Today, A Trade Tomorrow
+                    </h2>
+                </div>
         </div>
     );
 }
