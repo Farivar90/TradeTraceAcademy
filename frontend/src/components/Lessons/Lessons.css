@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+.lessons {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}
+
+
+.l-sec {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l-sec::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--primary), transparent);
+    z-index: 10;
+}
+
+.l-sec img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.l-sec #text {
+    position: absolute;
+    color: var(--primary);
+    font-size: 10vw;
+    text-align: center;
+    line-height: .55em;
+    font-family: 'Rancho', cursive;
+    transform: translatey(-50%);
+}
+
+.l-sec #text span {
+    font-size: .20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+
+
+.sec-l {
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.sec-l h2 {
+    font-size: 3.5em;
+    color: #00fbff;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5%;
+}
+
+.sec-l h3 {
+    font-size: 2em;
+    color: #a3fe1b;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 2%;
+}
+
+.sec-l h5 {
+    font-size: 1.5em;
+    color: #00c2fd;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 2%;
+}
+
+.sec-l p {
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 300;
+
+}

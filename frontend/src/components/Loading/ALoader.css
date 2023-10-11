@@ -12,6 +12,11 @@ svg {
    .animated-svg-container {
     justify-content: center;
     align-items: center;
-    background-color: rgba(20, 20, 20, 0.9); /* Optional: white background with slight transparency */
+    background-color: rgba(20, 20, 20, 0.9); 
   }
   
+  .logo-svg-container {
+    max-height: 20%;
+    justify-content: center;
+    align-items: center;
+  }
