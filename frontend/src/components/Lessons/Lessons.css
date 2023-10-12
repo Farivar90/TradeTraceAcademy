@@ -84,6 +84,14 @@
     padding: 2%;
 }
 
+.sec-l h4 {
+    font-size: 2em;
+    color: #0077ff;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 2%;
+}
+
 .sec-l h5 {
     font-size: 1.5em;
     color: #00c2fd;
@@ -96,5 +104,58 @@
     font-size: 1em;
     color: #ffffff;
     font-weight: 300;
+    margin-bottom: 10px;
+    padding: 2%;
 
+}
+
+
+/* lessons-menu */
+
+.lessons-menu {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #112434;
+}
+
+.lessons-menu-ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lessons-menu-ul li {
+    position: relative;
+    list-style: none;
+}
+
+.lessons-menu-ul li a {
+    font-size: 200%;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+.lessons-menu-ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+  }
+
+.lessons-menu-ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 10px var(--clr));
 }
