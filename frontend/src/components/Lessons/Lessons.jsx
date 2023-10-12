@@ -69,11 +69,11 @@ const Lessons = () => {
             </div>
             <div className='lessons-menu'>
                 <ul className='lessons-menu-ul'>
-                    <li style={{'--clr': '#48ff00'}}><a href="#" data-text=" . Introduction to Forex"> . Introduction to Forex</a></li>
-                    <li style={{'--clr': '#00de9b'}}><a href="#" data-text=" . Fundamental Analysis"> . Fundamental Analysis</a></li>
-                    <li style={{'--clr': '#00ffd5'}}><a href="#" data-text=" . Technical Analysis"> . Technical Analysis</a></li>
-                    <li style={{'--clr': '#009dff'}}><a href="#" data-text=" . Trading Psychology"> . Trading Psychology</a></li>
-                    <li style={{'--clr': '#002bff'}}><a href="#" data-text=" . Trading Platforms"> . Trading Platforms</a></li>
+                    <li style={{'--clr': '#48ff00'}}><a href="/Lessons/IntroductionToForex" data-text=" . Introduction to Forex"> . Introduction to Forex</a></li>
+                    <li style={{'--clr': '#00de9b'}}><a href="/Lessons/FundamentalAnalysis" data-text=" . Fundamental Analysis"> . Fundamental Analysis</a></li>
+                    <li style={{'--clr': '#00ffd5'}}><a href="/Lessons/TechnicalAnalysis" data-text=" . Technical Analysis"> . Technical Analysis</a></li>
+                    <li style={{'--clr': '#009dff'}}><a href="/Lessons/TradingPsychology" data-text=" . Trading Psychology"> . Trading Psychology</a></li>
+                    <li style={{'--clr': '#002bff'}}><a href="/Lessons/TradingPlatforms" data-text=" . Trading Platforms"> . Trading Platforms</a></li>
                 </ul>
 
             </div>
