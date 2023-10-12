@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+.technical-analysis-page {
+    overflow-x: hidden;
+    background: #50e5ff;
+    min-height: 100vh;
+}
+
+.tech-analysis-parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tech-analysis-parallax img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#forex-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    color: #112434;
+}
+
+.tech-analysis-sec {
+    position: relative;
+    padding: 100px;
+    background: #112434;
+}
+
+.tech-analysis-sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tech-analysis-sec h3 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tech-analysis-sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+/* Updated with unique class names */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.ta-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    gap: 60px;
+    background-color: #112434;
+    z-index: 0;
+}
+
+.ta-box {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.ta-container .ta-box::before
+{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-top: 4px solid var(--clr);
+    border-bottom: 4px solid var(--clr);
+    z-index: -1;
+    transform: skewY(15deg);
+    transition: 0.5s ease-in-out;
+}
+.ta-container .ta-box:hover::before
+{
+    transform: skewY(0deg);
+    inset: -10px 40px;
+}
+.ta-container .ta-box::after
+{
+    content: '';
+    position: absolute;
+    inset: 60px -10px;
+    border-left: 4px solid var(--clr);
+    border-right: 4px solid var(--clr);
+    z-index: -1;
+    transform: skew(15deg);
+    transition: 0.5s ease-in-out;
+}
+.ta-container .ta-box:hover::after
+{
+    transform: skew(0deg);
+    inset: 40px -10px;
+}
+.ta-container .ta-box .ta-content
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.ta-container .ta-box .ta-content .ta-icon
+{
+    color: var(--clr);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 0 4px #2e2e2e,0 0 0 6px var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: #2e2e2e;
+    transition: 0.5s ease-in-out;
+}
+.ta-container .ta-box:hover .ta-content .ta-icon 
+{
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e,0 0 0 300px var(--clr);
+}
+.ta-container .ta-box .ta-content .ta-text h3
+{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+}
+.ta-container .ta-box:hover .ta-content .ta-text h3
+{
+    color: #2e2e2e;
+}
+.ta-container .ta-box .ta-content .ta-text p
+{
+    color: #999;
+    transition: 0.5s ease-in-out;
+}
+.ta-container .ta-box:hover .ta-content .ta-text p
+{
+    color: #2e2e2e;
+}
+.ta-container .ta-box .ta-content .ta-text a
+{
+    position: relative;
+    background: var(--clr);
+    color: #2e2e2e;
+    padding: 8px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+.ta-container .ta-box:hover .ta-content .ta-text a
+{
+    background: #2e2e2e;
+    color: var(--clr);
+}
