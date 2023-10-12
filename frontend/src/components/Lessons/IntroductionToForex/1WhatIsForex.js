@@ -1,6 +1,7 @@
 import './ITF.css';
 import atc from '../../../assets/wifbg.gif';
 import 'animate.css';
+import SocialShare from '../../SocialShare/SocialShare';
 
 
 const WhatIsForex = () =>{
@@ -66,6 +67,7 @@ const WhatIsForex = () =>{
                     <span data-text="Watch the video"></span>
                 </div>
             </div>
+            <SocialShare/>
             <div className='back-to-int'>
                 <a href="/Lessons/IntroductionToForex">
                     <span></span>

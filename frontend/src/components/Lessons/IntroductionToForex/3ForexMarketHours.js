@@ -4,6 +4,7 @@ import ses from '../../../assets/sessions.png';
 import ses2 from '../../../assets/ses2.png';
 import ses3 from '../../../assets/ses3.png';
 import 'animate.css';
+import SocialShare from '../../SocialShare/SocialShare';
 
 const ForexMarketHours = () =>{
     const closeVideo = () => {
@@ -88,6 +89,7 @@ const ForexMarketHours = () =>{
                     <span data-text="Watch the video"></span>
                 </div>
             </div>
+            <SocialShare/>
             <div className='back-to-int'>
                 <a href="/Lessons/IntroductionToForex">
                     <span></span>

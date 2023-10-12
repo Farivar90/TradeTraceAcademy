@@ -1,6 +1,8 @@
 import './ITF.css';
 import mcp from '../../../assets/mcp.gif';
 import 'animate.css';
+import SocialShare from '../../SocialShare/SocialShare';
+
 
 const MajorCurrencyPairs = () =>{
     const closeVideo = () => {
@@ -72,6 +74,7 @@ const MajorCurrencyPairs = () =>{
                     <span data-text="Watch the video"></span>
                 </div>
             </div>
+            <SocialShare/>
             <div className='back-to-int'>
                 <a href="/Lessons/IntroductionToForex">
                     <span></span>
