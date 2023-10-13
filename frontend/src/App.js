@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Switch } from 'react-router-dom';
+import { Switch, Redirect} from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from './components/Routes/Routes';
 import NavBar from './components/NavBar/NavBar';
 import MainPage from './components/MainPage/MainPage';
@@ -18,6 +18,9 @@ import FundamentalAnalysis from './components/Lessons/FundamentalAnalysis/Fundam
 import TechnicalAnalysis from './components/Lessons/TechnicalAnalysis/TechnicalAnalysis';
 import TradingPsychology from './components/Lessons/TradingPsychology/TradingPsychology';
 import TradingPlatforms from './components/Lessons/TradingPlatforms/TradingPlatforms';
+import EconomicIndicators from './components/Lessons/FundamentalAnalysis/1EconomicIndicators';
+import PoliticalEvents from './components/Lessons/FundamentalAnalysis/2PoliticalEvents';
+import InterestRates from './components/Lessons/FundamentalAnalysis/3InterestRates';
 import './App.css';
 
 function App() {
@@ -70,7 +73,12 @@ function App() {
             <AuthRoute exact path="/Lessons/IntroductionToForex/WhatIsForex" component={WhatIsForex} />
             <AuthRoute exact path="/Lessons/IntroductionToForex/ForexMarketHours" component={ForexMarketHours} />
             <AuthRoute exact path="/Lessons/IntroductionToForex/MajorCurrencyPairs" component={MajorCurrencyPairs} />
+            <AuthRoute exact path="/Lessons/FundamentalAnalysis/EconomicIndicators" component={EconomicIndicators} />
+            <AuthRoute exact path="/Lessons/FundamentalAnalysis/PoliticalEvents" component={PoliticalEvents} />
+            <AuthRoute exact path="/Lessons/FundamentalAnalysis/InterestRates" component={InterestRates} />
+            <AuthRoute exact path="/Lessons/TechnicalAnalysis" component={TechnicalAnalysis} />
             <ProtectedRoute exact path="/profile" component={Profile} />
+            <Redirect to="/" />
           </Switch>
           {showButton && (
   <button 
