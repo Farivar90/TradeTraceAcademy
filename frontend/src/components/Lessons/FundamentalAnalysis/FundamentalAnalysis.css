@@ -2,7 +2,7 @@
 
 .fundamental-analysis-page {
     overflow-x: hidden;
-    background: #50e5ff;
+    background: #b1b1b1;
     min-height: 100vh;
 }
 
@@ -21,6 +21,22 @@
     width: 100%;
     pointer-events: none;
 }
+
+#s3a {
+    opacity: 0; /* Initially hidden */
+    position: absolute; /* To overlay on top of s3b */
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s; /* Optional: for a smooth transition */
+    padding-top: 5%;
+}
+
+#s3b {
+    opacity: 1; /* Initially visible */
+    transition: opacity 0.2s; /* Optional: for a smooth transition */
+}
+
+
 /* 
 #forex-text {
     position: absolute;

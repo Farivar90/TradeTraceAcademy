@@ -2,32 +2,38 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './FundamentalAnalysis.css';
-// You can import your assets here
-// For example:
-// import e1 from '../../../assets/e1.png';
-// import p1 from '../../../assets/p1.png';
-// import i1 from '../../../assets/i1.png';
+import tir from '../../../assets/tir.png';
+import s3a from '../../../assets/service-360-after.png';
+import s3b from '../../../assets/service-360-before.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const FundamentalAnalysis = () => {
+
     useEffect(() => {
-        // Add your gsap animations here
-        // For example:
-        // gsap.from("#economic-indicator", { ... });
-        // gsap.from("#political-events", { ... });
-        // gsap.from("#interest-rates", { ... });
+        ScrollTrigger.create({
+            trigger: ".analysis-parallax",
+            start: "top top", // Trigger as soon as scrolling starts
+            onEnter: () => {
+                gsap.to("#s3a", { opacity: 1, duration: 0.2 }); // Show s3a
+                gsap.to("#s3b", { opacity: 0, duration: 0.2 }); // Hide s3b
+            },
+            onLeaveBack: () => {
+                gsap.to("#s3a", { opacity: 0, duration: 0.2 }); // Hide s3a
+                gsap.to("#s3b", { opacity: 1, duration: 0.2 }); // Show s3b
+            }
+        });
     }, []);
+    
+    
 
     return (
         <div className="fundamental-analysis-page">
             <section className="analysis-parallax">
-                {/* Add your images and elements here */}
-                {/* For example:
-                <img src={e1} id="economic-indicator" alt="Economic Indicator"/>
-                <img src={p1} id="political-events" alt="Political Events"/>
-                <img src={i1} id="interest-rates" alt="Interest Rates"/>
-                */}
+                <img src={s3b} id="s3b" alt="s3b"/>
+                <img src={s3a} id="s3a" alt="s3a"/>
+                {/* <img src={tir} id="tir" alt="tir"/> */}
+               
             </section>
             <section className="analysis-sec">
                 <h2>Fundamental Analysis</h2>
