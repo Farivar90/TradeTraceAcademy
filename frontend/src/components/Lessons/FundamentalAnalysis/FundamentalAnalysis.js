@@ -48,7 +48,7 @@ const FundamentalAnalysis = () => {
                         </div>
                     </div>
                 </div>
-                <div className="fa-box" style={{ "--clr": "#50e3c2" }}>
+                <div className="fa-box" style={{ "--clr": "#d8f500" }}>
                     <div className="fa-content">
                         <div className="fa-icon"><ion-icon name="flag-outline"></ion-icon></div>
                         <div className="fa-text">
@@ -58,7 +58,7 @@ const FundamentalAnalysis = () => {
                         </div>
                     </div>
                 </div>
-                <div className="fa-box" style={{ "--clr": "#4a90e2" }}>
+                <div className="fa-box" style={{ "--clr": "#9eff01" }}>
                     <div className="fa-content">
                         <div className="fa-icon"><ion-icon name="cash-outline"></ion-icon></div>
                         <div className="fa-text">

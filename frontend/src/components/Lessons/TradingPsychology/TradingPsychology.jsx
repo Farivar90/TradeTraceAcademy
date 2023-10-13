@@ -45,7 +45,7 @@ const TradingPsychology = () => {
                         </div>
                     </div>
                 </div>
-                <div className="tp-box" style={{ "--clr": "#3498db" }}>
+                <div className="tp-box" style={{ "--clr": "#0105ff" }}>
                     <div className="tp-content">
                         <div className="tp-icon"><ion-icon name="heart-outline"></ion-icon></div>
                         <div className="tp-text">

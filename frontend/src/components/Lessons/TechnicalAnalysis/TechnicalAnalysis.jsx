@@ -35,7 +35,7 @@ const TechnicalAnalysis = () => {
                 </h3>
             </section>
             <div className="ta-container">
-                <div className="ta-box" style={{ "--clr": "#f39c12" }}>
+                <div className="ta-box" style={{ "--clr": "#ff0101" }}>
                     <div className="ta-content">
                         <div className="ta-icon"><ion-icon name="bar-chart-outline"></ion-icon></div>
                         <div className="ta-text">
@@ -45,7 +45,7 @@ const TechnicalAnalysis = () => {
                         </div>
                     </div>
                 </div>
-                <div className="ta-box" style={{ "--clr": "#e74c3c" }}>
+                <div className="ta-box" style={{ "--clr": "#ff6f01" }}>
                     <div className="ta-content">
                         <div className="ta-icon"><ion-icon name="pulse-outline"></ion-icon></div>
                         <div className="ta-text">
