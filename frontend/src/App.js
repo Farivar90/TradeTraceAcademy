@@ -21,6 +21,8 @@ import TradingPlatforms from './components/Lessons/TradingPlatforms/TradingPlatf
 import EconomicIndicators from './components/Lessons/FundamentalAnalysis/1EconomicIndicators';
 import PoliticalEvents from './components/Lessons/FundamentalAnalysis/2PoliticalEvents';
 import InterestRates from './components/Lessons/FundamentalAnalysis/3InterestRates';
+import ChartTypes from './components/Lessons/TechnicalAnalysis/1ChartTypes';
+import Indicators from './components/Lessons/TechnicalAnalysis/2Indicators';
 import './App.css';
 
 function App() {
@@ -76,7 +78,8 @@ function App() {
             <AuthRoute exact path="/Lessons/FundamentalAnalysis/EconomicIndicators" component={EconomicIndicators} />
             <AuthRoute exact path="/Lessons/FundamentalAnalysis/PoliticalEvents" component={PoliticalEvents} />
             <AuthRoute exact path="/Lessons/FundamentalAnalysis/InterestRates" component={InterestRates} />
-            <AuthRoute exact path="/Lessons/TechnicalAnalysis" component={TechnicalAnalysis} />
+            <AuthRoute exact path="/Lessons/TechnicalAnalysis/ChartTypes" component={ChartTypes} />
+            <AuthRoute exact path="/Lessons/TechnicalAnalysis/Indicators" component={Indicators} />
             <ProtectedRoute exact path="/profile" component={Profile} />
             <Redirect to="/" />
           </Switch>
