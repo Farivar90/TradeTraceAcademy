@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Switch, Redirect} from 'react-router-dom';
+import { Switch, Redirect, Route} from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from './components/Routes/Routes';
 import NavBar from './components/NavBar/NavBar';
 import MainPage from './components/MainPage/MainPage';
@@ -68,27 +68,27 @@ function App() {
         <>
           <NavBar />
           <Switch>
-            <AuthRoute exact path="/" component={MainPage} />
+            <Route exact path="/" component={MainPage} />
             <AuthRoute exact path="/login" component={LoginForm} />
             <AuthRoute exact path="/signup" component={SignupForm} />
-            <AuthRoute exact path="/Lessons" component={Lessons} />
-            <AuthRoute exact path="/Lessons/IntroductionToForex" component={IntroductionToForex} />
-            <AuthRoute exact path="/Lessons/FundamentalAnalysis" component={FundamentalAnalysis} />
-            <AuthRoute exact path="/Lessons/TechnicalAnalysis" component={TechnicalAnalysis} />
-            <AuthRoute exact path="/Lessons/TradingPsychology" component={TradingPsychology} />
-            <AuthRoute exact path="/Lessons/TradingPlatforms" component={TradingPlatforms} />
-            <AuthRoute exact path="/Lessons/IntroductionToForex/WhatIsForex" component={WhatIsForex} />
-            <AuthRoute exact path="/Lessons/IntroductionToForex/ForexMarketHours" component={ForexMarketHours} />
-            <AuthRoute exact path="/Lessons/IntroductionToForex/MajorCurrencyPairs" component={MajorCurrencyPairs} />
-            <AuthRoute exact path="/Lessons/FundamentalAnalysis/EconomicIndicators" component={EconomicIndicators} />
-            <AuthRoute exact path="/Lessons/FundamentalAnalysis/PoliticalEvents" component={PoliticalEvents} />
-            <AuthRoute exact path="/Lessons/FundamentalAnalysis/InterestRates" component={InterestRates} />
-            <AuthRoute exact path="/Lessons/TechnicalAnalysis/ChartTypes" component={ChartTypes} />
-            <AuthRoute exact path="/Lessons/TechnicalAnalysis/Indicators" component={Indicators} />
-            <AuthRoute exact path="/Lessons/TradingPsychology/RiskManagement" component={RiskManagement} />
-            <AuthRoute exact path="/Lessons/TradingPsychology/EmotionalManagement" component={EmotionalManagement} />
-            <AuthRoute exact path="/News" component={News} />
-            <AuthRoute exact path="/Forum" component={Forum} />
+            <Route exact path="/Lessons" component={Lessons} />
+            <Route exact path="/Lessons/IntroductionToForex" component={IntroductionToForex} />
+            <Route exact path="/Lessons/FundamentalAnalysis" component={FundamentalAnalysis} />
+            <Route exact path="/Lessons/TechnicalAnalysis" component={TechnicalAnalysis} />
+            <Route exact path="/Lessons/TradingPsychology" component={TradingPsychology} />
+            <Route exact path="/Lessons/TradingPlatforms" component={TradingPlatforms} />
+            <Route exact path="/Lessons/IntroductionToForex/WhatIsForex" component={WhatIsForex} />
+            <Route exact path="/Lessons/IntroductionToForex/ForexMarketHours" component={ForexMarketHours} />
+            <Route exact path="/Lessons/IntroductionToForex/MajorCurrencyPairs" component={MajorCurrencyPairs} />
+            <Route exact path="/Lessons/FundamentalAnalysis/EconomicIndicators" component={EconomicIndicators} />
+            <Route exact path="/Lessons/FundamentalAnalysis/PoliticalEvents" component={PoliticalEvents} />
+            <Route exact path="/Lessons/FundamentalAnalysis/InterestRates" component={InterestRates} />
+            <Route exact path="/Lessons/TechnicalAnalysis/ChartTypes" component={ChartTypes} />
+            <Route exact path="/Lessons/TechnicalAnalysis/Indicators" component={Indicators} />
+            <Route exact path="/Lessons/TradingPsychology/RiskManagement" component={RiskManagement} />
+            <Route exact path="/Lessons/TradingPsychology/EmotionalManagement" component={EmotionalManagement} />
+            <Route exact path="/News" component={News} />
+            <Route exact path="/Forum" component={Forum} />
             <ProtectedRoute exact path="/profile" component={Profile} />
             <Redirect to="/" />
           </Switch>

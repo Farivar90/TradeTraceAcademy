@@ -13,15 +13,24 @@
     position: relative;
 }
 
+.parallax-image {
+  height: 120vh;
+  object-fit: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .bg-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
-    pointer-events: none; /* So it doesn't interfere with any interactions */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    transition: background-color 0.3s ease;
 }
 
 .bg-main img {
@@ -33,13 +42,41 @@
   opacity: 0; /* Initially hidden */
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  top: 50%;
+  top: 70%;
   color: aliceblue;
   text-align: center;
   width: 95%;
   padding: 5px;
   z-index: 1;
-  font-size: 170%;
+  font-size: 270%;
+  font-weight: bold;
+}
+
+.info-mainbg1 {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+  position: absolute;
+  top: 270%;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  width: 95%;
+  padding: 5px;
+  z-index: 1;
+  font-size: 270%;
+  font-weight: bold;
+}
+
+.info-mainbg2 {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.5s ease; /* Smooth transition */
+  position: absolute;
+  top: 470%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 95%;
+  padding: 5px;
+  z-index: 1;
+  font-size: 270%;
   font-weight: bold;
 }
 
@@ -50,7 +87,7 @@
 
 .main-t1{
   text-align: center;
-  margin: 5%;
+  /* margin: 5%; */
 }
 
 .name-main {
@@ -74,9 +111,7 @@
   font-weight:initial;
   background-clip: text;
   color: transparent;
-  text-align: center;
-  padding: 5%;
-  padding: 2%;
+  padding-bottom: 5%;
 }
 
 .tracking-in-expand {
@@ -200,7 +235,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   background: linear-gradient(#00a1f8,#00ffe5);
-  animation: animate 1s linear infinite;
+  /* animation: animate 1s linear infinite; */
   transition:.6s;
   
   transform: rotatex(75deg) translatey(-200px) translatez(-100px);
@@ -251,7 +286,8 @@
   padding: 20%;
 }
 
+
 .logo-svg {
-  width: 30%;
+  width: 20%;
 }
 

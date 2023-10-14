@@ -6,12 +6,17 @@ import forum from '../../assets/forum.gif'
 import news from '../../assets/news.gif'
 import LogoSVG from '../Loading/Logo';
 import { Link } from 'react-router-dom';
-
-
+import ecb from '../../assets/ecb.jpg';
+import sft from '../../assets/sft.png';
+import Cube from '../Cube/Cube';
 
 function MainPage() {
     const overlayRef = useRef(null);
     const infoRef = useRef(null);
+    const ecbOverlayRef = useRef(null);
+    const ecbInfoRef = useRef(null);
+    const sftOverlayRef = useRef(null);
+    const sftInfoRef = useRef(null);
     const [showSlogan, setShowSlogan] = useState(true);
 
     useEffect(() => {
@@ -22,32 +27,47 @@ function MainPage() {
         return () => clearInterval(interval);
     }, []);
 
-    useEffect(() => {const handleScroll = () => {
-      const offset = window.scrollY;
-      const opacity = Math.min(offset / 500, 1); // Cap at 1 for 100% opacity
-      const opacity1 = Math.min(offset / 100, 1);
-      if (overlayRef.current) {
-          overlayRef.current.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
-      }
-      if (infoRef.current) {
-          infoRef.current.style.opacity = opacity1;
-      }
-  };
-  
-
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            const opacity = Math.min(offset / 500, 1);
+            const opacity1 = Math.min(offset / 100, 1);
+            if (overlayRef.current) {
+                overlayRef.current.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+            }
+            if (infoRef.current) {
+                infoRef.current.style.opacity = opacity1;
+            }
+            if (ecbOverlayRef.current) {
+                ecbOverlayRef.current.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+            }
+            if (ecbInfoRef.current) {
+                ecbInfoRef.current.style.opacity = opacity1;
+            }
+            if (sftOverlayRef.current) {
+                sftOverlayRef.current.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+            }
+            if (sftInfoRef.current) {
+                sftInfoRef.current.style.opacity = opacity1;
+            }
+        };
         window.addEventListener('scroll', handleScroll);
         return () => {
-            // Cleanup the event listener on component unmount
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
+    
     return (
         <div className="main-page" role="main" aria-label="Main Content">
             <div className='bg-main'>
-                <img src={bg} alt="Federal Reserve Building" />
+                {/* <img src={bg} alt="Federal Reserve Building" /> */}
                 <div className="bg-overlay" ref={overlayRef}></div>
                 <div>
+            <div
+                className="parallax-image"
+                style={{ backgroundImage: `url(${bg})` }}
+                alt='Federal Reserve Building'
+            ></div>
                   <h1 className='info-mainbg' ref={infoRef}>the Marriner S. Eccles Federal Reserve Board Building</h1>
                 </div>
             </div>
@@ -68,6 +88,16 @@ function MainPage() {
                         A Trace Today, A Trade Tomorrow
                     </h2>
                 )}
+            <div>
+            <div
+                className="parallax-image"
+                style={{ backgroundImage: `url(${ecb})` }}
+                alt='ECB'
+            ></div>
+            <div className="bg-overlay" ref={ecbOverlayRef}></div>
+                <h1 className='info-mainbg1' ref={ecbInfoRef}>Seat of the European Central Bank</h1>
+            </div>
+
             </div>
             <nav className='main-cards-1st' aria-label="Main Navigation">
                 <div class="card1">
@@ -93,6 +123,17 @@ function MainPage() {
                 </div>
             </nav>
             <div className='after-c'></div>
+            <div
+                className="parallax-image"
+                style={{ backgroundImage: `url(${sft})` }}
+                alt='SFT'
+            ></div>
+            <div className="bg-overlay" ref={sftOverlayRef}></div>
+                <h1 className='info-mainbg2' ref={sftInfoRef}>Shanghai World Financial Center</h1>
+            <div className='after-c'>
+                <Cube />
+                <h1>dgag</h1>
+            </div>
         </div>
     );
 }
