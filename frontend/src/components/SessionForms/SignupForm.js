@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import './SessionForm.css';
+import './SessionForm.css'; // Assuming this is where you'll place the provided CSS
+
 import { signup, clearSessionErrors } from '../../store/session';
 
-function SignupForm () {
+function SignupForm() {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -52,52 +53,65 @@ function SignupForm () {
   }
 
   return (
-    <form className="session-form" onSubmit={handleSubmit}>
-      <h2>Sign Up Form</h2>
-      <div className="errors">{errors?.email}</div>
-      <label>
-        <span>Email</span>
-        <input type="text"
-          value={email}
-          onChange={update('email')}
-          placeholder="Email"
-        />
-      </label>
-      <div className="errors">{errors?.username}</div>
-      <label>
-        <span>Username</span>
-        <input type="text"
-          value={username}
-          onChange={update('username')}
-          placeholder="Username"
-        />
-      </label>
-      <div className="errors">{errors?.password}</div>
-      <label>
-        <span>Password</span>
-        <input type="password"
-          value={password}
-          onChange={update('password')}
-          placeholder="Password"
-        />
-      </label>
-      <div className="errors">
-        {password !== password2 && 'Confirm Password field must match'}
+    <section className='ses-section'>
+      <div className="form-box-se">
+        <div className="form-value-se">
+          <form onSubmit={handleSubmit}>
+            <h2>Sign Up</h2>
+            <div className="errors-se">{errors?.email}</div>
+            <div className="inputbox-se">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input 
+                type="email" 
+                value={email}
+                onChange={update('email')}
+                required
+              />
+              <label>Email</label>
+            </div>
+            <div className="errors-se">{errors?.username}</div>
+            <div className="inputbox-se">
+              <ion-icon name="person-outline"></ion-icon>
+              <input 
+                type="text" 
+                value={username}
+                onChange={update('username')}
+                required
+              />
+              <label>Username</label>
+            </div>
+            <div className="errors-se">{errors?.password}</div>
+            <div className="inputbox-se">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input 
+                type="password" 
+                value={password}
+                onChange={update('password')}
+                required
+              />
+              <label>Password</label>
+            </div>
+            <div className="errors-se">
+              {password !== password2 && 'Confirm Password field must match'}
+            </div>
+            <div className="inputbox-se">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input 
+                type="password" 
+                value={password2}
+                onChange={update('password2')}
+                required
+              />
+              <label>Confirm Password</label>
+            </div>
+            <button className='button-ses' disabled={!email || !username || !password || password !== password2}>Sign Up</button>
+            <div className="register">
+              <p>Already have an account? <a href="/login">Login</a></p>
+            </div>
+          </form>
+        </div>
       </div>
-      <label>
-        <span>Confirm Password</span>
-        <input type="password"
-          value={password2}
-          onChange={update('password2')}
-          placeholder="Confirm Password"
-        />
-      </label>
-      <input
-        type="submit"
-        value="Sign Up"
-        disabled={!email || !username || !password || password !== password2}
-      />
-    </form>
+    </section>
   );
 }
 

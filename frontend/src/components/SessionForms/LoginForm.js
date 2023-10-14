@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import './SessionForm.css';
+import './SessionForm.css'; // Assuming this is where you'll place the provided CSS
 
 import { login, clearSessionErrors } from '../../store/session';
 
-function LoginForm () {
+function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const errors = useSelector(state => state.errors.session);
@@ -23,36 +23,53 @@ function LoginForm () {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(login({ email, password })); 
+    dispatch(login({ email, password }));
   }
 
   return (
-    <form className="session-form" onSubmit={handleSubmit}>
-      <h2>Log In Form</h2>
-      <div className="errors">{errors?.email}</div>
-      <label>
-        <span>Email</span>
-        <input type="text"
-          value={email}
-          onChange={update('email')}
-          placeholder="Email"
-        />
-      </label>
-      <div className="errors">{errors?.password}</div>
-      <label>
-        <span>Password</span>
-        <input type="password"
-          value={password}
-          onChange={update('password')}
-          placeholder="Password"
-        />
-      </label>
-      <input
-        type="submit"
-        value="Log In"
-        disabled={!email || !password}
-      />
-    </form>
+    <section className='ses-section'>
+      <div className="form-box-se">
+        <div className="form-value-se">
+          <form onSubmit={handleSubmit}>
+            <h2>Login</h2>
+            <div className="errors-se">{errors?.email}</div>
+            <div className="inputbox-se">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input 
+                type="email" 
+                value={email}
+                onChange={update('email')}
+                required
+              />
+              <label>Email</label>
+            </div>
+            <div className="errors-se">{errors?.password}</div>
+            <div className="inputbox-se">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input 
+                type="password" 
+                value={password}
+                onChange={update('password')}
+                required
+              />
+              <label>Password</label>
+            </div>
+            <div className="forget">
+              <label>
+                <input type="checkbox" /> Remember me
+              </label>
+              {/* <label>
+                <a href="#">Forgot password?</a>
+              </label> */}
+            </div>
+            <button className='button-ses' disabled={!email || !password}>Log in</button>
+            <div className="register">
+              <p>Don't have an account? <a href="/signup">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   );
 }
 

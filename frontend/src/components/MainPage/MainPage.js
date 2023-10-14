@@ -43,57 +43,56 @@ function MainPage() {
     }, []);
 
     return (
-        <div className="main-page">
+        <div className="main-page" role="main" aria-label="Main Content">
             <div className='bg-main'>
-                <img src={bg} alt="background picture - fed building" />
+                <img src={bg} alt="Federal Reserve Building" />
                 <div className="bg-overlay" ref={overlayRef}></div>
                 <div>
                   <h1 className='info-mainbg' ref={infoRef}>the Marriner S. Eccles Federal Reserve Board Building</h1>
                 </div>
             </div>
             <div className='main-t1'>
-                    <h1 className='name-main'>
+                <h1 className='name-main'>
                     TradeTrace Academy
                     <div className='logo-svg'>
-                        < LogoSVG/>
+                        < LogoSVG aria-hidden="true"/>
                     </div>
-                    </h1>
-                    {showSlogan && (
+                </h1>
+                {showSlogan && (
                     <h2 className='slogan-main tracking-in-expand'>
                         A Trace Today, A Trade Tomorrow
                     </h2>
-                    )}
-                    {!showSlogan && (
+                )}
+                {!showSlogan && (
                     <h2 className='slogan-main tracking-out-contract'>
                         A Trace Today, A Trade Tomorrow
                     </h2>
-                    )}
+                )}
             </div>
-            <div className='main-cards-1st'>
+            <nav className='main-cards-1st' aria-label="Main Navigation">
                 <div class="card1">
                     <Link to="/lessons" className="no-underline">
-                        <img src={lessons} alt="Lessons" />
+                        <img src={lessons} alt="Lessons icon" />
                         <h3>Lessons</h3>
                         <p>A structured educational hub teaching the essentials of Forex trading, from basics to advanced techniques.</p>
                     </Link>
                 </div>
                 <div class="card2">
                     <Link to="/News" className="no-underline">
-                        <img src={news} alt="News" />
+                        <img src={news} alt="News icon" />
                         <h3>News</h3>
                         <p>Real-time updates on Forex market events, providing insights and analysis on currency movements and global impacts.</p>
                     </Link>
                 </div>
                 <div class="card3">
                     <Link to="/Forum" className="no-underline">
-                        <img src={forum} alt="Forum" />
+                        <img src={forum} alt="Forum icon" />
                         <h3>Forum</h3>
                         <p>A community space for traders to discuss experiences, seek advice, and share insights on Forex trading strategies.</p>
                     </Link>
                 </div>
-            </div>
-                <div className='after-c'>
-                </div>
+            </nav>
+            <div className='after-c'></div>
         </div>
     );
 }
