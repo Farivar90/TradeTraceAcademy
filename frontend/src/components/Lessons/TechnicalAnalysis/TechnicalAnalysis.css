@@ -2,9 +2,35 @@
 
 .technical-analysis-page {
     overflow-x: hidden;
-    background: #50e5ff;
+    background: rgb(24, 27, 37);
     min-height: 100vh;
 }
+
+#gc {
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+    width: 6%;
+    top: 25%;
+    left: 83%;
+}
+
+#rc {
+    opacity: 0;
+    position: absolute;
+    width: 5%;
+    top: 18%;
+    left: 85%;
+}
+
+#sell {
+    opacity: 0;
+    position: absolute;
+    width: 20%;
+    top: 60%;
+    left: 80%;
+}
+
 
 .tech-analysis-parallax {
     position: relative;
@@ -55,7 +81,6 @@
 }
 
 
-/* Updated with unique class names */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 

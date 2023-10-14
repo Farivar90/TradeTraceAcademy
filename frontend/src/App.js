@@ -23,6 +23,8 @@ import PoliticalEvents from './components/Lessons/FundamentalAnalysis/2Political
 import InterestRates from './components/Lessons/FundamentalAnalysis/3InterestRates';
 import ChartTypes from './components/Lessons/TechnicalAnalysis/1ChartTypes';
 import Indicators from './components/Lessons/TechnicalAnalysis/2Indicators';
+import News from './components/News/News';
+import Forum from './components/Forum/Forum';
 import './App.css';
 
 function App() {
@@ -80,6 +82,8 @@ function App() {
             <AuthRoute exact path="/Lessons/FundamentalAnalysis/InterestRates" component={InterestRates} />
             <AuthRoute exact path="/Lessons/TechnicalAnalysis/ChartTypes" component={ChartTypes} />
             <AuthRoute exact path="/Lessons/TechnicalAnalysis/Indicators" component={Indicators} />
+            <AuthRoute exact path="/News" component={News} />
+            <AuthRoute exact path="/Forum" component={Forum} />
             <ProtectedRoute exact path="/profile" component={Profile} />
             <Redirect to="/" />
           </Switch>

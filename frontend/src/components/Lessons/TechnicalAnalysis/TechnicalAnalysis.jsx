@@ -2,29 +2,64 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './TechnicalAnalysis.css';
-// You can import your assets here
-// For example:
-// import chart from '../../../assets/chart.png';
-// import indicators from '../../../assets/indicators.png';
+import tabg1 from '../../../assets/tabg1.png';
+import gcandle from '../../../assets/tagreencandle.png';
+import rcandle from '../../../assets/taredcandle.png';
+import sell from '../../../assets/sell-ta.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TechnicalAnalysis = () => {
+
     useEffect(() => {
-        // Add your gsap animations here
-        // For example:
-        // gsap.from("#chart-types", { ... });
-        // gsap.from("#indicators", { ... });
+ 
+        gsap.set(["#gc", "#rc", "#sell"], { opacity: 0, y: 50 });
+    
+        // Animation for gcandle
+        gsap.to("#gc", {
+            scrollTrigger: {
+                trigger: "#gc",
+                start: "top 50%",
+                end: "bottom 30%",
+                scrub: true
+            },
+            opacity: 1,
+            y: 0
+        });
+    
+        // Animation for rcandle
+        gsap.to("#rc", {
+            scrollTrigger: {
+                trigger: "#rc",
+                start: "top 20%",
+                end: "bottom 20%",
+                scrub: true
+            },
+            opacity: 1,
+            y: 0
+        });
+    
+        // Animation for sell
+        gsap.to("#sell", {
+            scrollTrigger: {
+                trigger: "#sell",
+                start: "top 60%",
+                end: "bottom 50%",
+                scrub: true
+            },
+            opacity: 1,
+            y: 0
+        });
     }, []);
+    
 
     return (
         <div className="technical-analysis-page">
             <section className="tech-analysis-parallax">
-                {/* Add your images and elements here */}
-                {/* For example:
-                <img src={chart} id="chart-types" alt="Chart Types"/>
-                <img src={indicators} id="indicators" alt="Indicators"/>
-                */}
+                <img src={tabg1} id="chart-types" alt="tabg1"/>
+                <img src={gcandle} id="gc" alt="gcandle"/>
+                <img src={rcandle} id="rc" alt="rcandle"/>
+                <img src={sell} id="sell" alt="sell"/>
             </section>
             <section className="tech-analysis-sec">
                 <h2>Technical Analysis</h2>

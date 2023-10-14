@@ -78,14 +78,14 @@ function MainPage() {
                     </Link>
                 </div>
                 <div class="card2">
-                    <Link to="/lessons" className="no-underline">
+                    <Link to="/News" className="no-underline">
                         <img src={news} alt="News" />
                         <h3>News</h3>
                         <p>Real-time updates on Forex market events, providing insights and analysis on currency movements and global impacts.</p>
                     </Link>
                 </div>
                 <div class="card3">
-                    <Link to="/lessons" className="no-underline">
+                    <Link to="/Forum" className="no-underline">
                         <img src={forum} alt="Forum" />
                         <h3>Forum</h3>
                         <p>A community space for traders to discuss experiences, seek advice, and share insights on Forex trading strategies.</p>
