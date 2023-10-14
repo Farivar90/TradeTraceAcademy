@@ -2,29 +2,49 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './TradingPsychology.css';
-// You can import your assets here
-// For example:
-// import riskManagement from '../../../assets/riskManagement.png';
-// import emotionalManagement from '../../../assets/emotionalManagement.png';
+import mountains_behind from '../../../assets/mountains_behind.png';
+import mountains_front from '../../../assets/mountains_front.png';
+import stars from '../../../assets/stars.png';
+import moon from '../../../assets/moon.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TradingPsychology = () => {
     useEffect(() => {
-        // Add your gsap animations here
-        // For example:
-        // gsap.from("#risk-management", { ... });
-        // gsap.from("#emotional-management", { ... });
+        const starsEl = document.getElementById('stars');
+        const moonEl = document.getElementById('moon');
+        const mountainsBehindEl = document.getElementById('mountains_behind');
+        const textEl = document.getElementById('text-p');
+        const mountainsFrontEl = document.getElementById('mountains_front');
+    
+        const handleScroll = () => {
+            let value = window.scrollY;
+            if (starsEl) starsEl.style.left = value * 0.25 + 'px';
+            if (moonEl) moonEl.style.top = value * 1.05 + 'px';
+            if (mountainsBehindEl) mountainsBehindEl.style.top = value * 0.5 + 'px';
+            if (mountainsFrontEl) mountainsFrontEl.style.top = value * 0 + 'px';
+            if (textEl) {
+                textEl.style.marginRight = value * 4 + 'px';
+                textEl.style.marginTop = value * 1.5 + 'px';
+            }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        // Cleanup function to remove the event listener when the component is unmounted
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
     }, []);
-
+    
     return (
         <div className="trading-psychology-page">
             <section className="psychology-parallax">
-                {/* Add your images and elements here */}
-                {/* For example:
-                <img src={riskManagement} id="risk-management" alt="Risk Management"/>
-                <img src={emotionalManagement} id="emotional-management" alt="Emotional Management"/>
-                */}
+                <h2 id="text-p">Emotional Management</h2>
+                <img src={stars} id="stars" alt="Stars"/>
+                <img src={moon} id="moon" alt="Moon"/>
+                <img src={mountains_behind} id="mountains_behind" alt="Mountains Behind"/>
+                <img src={mountains_front} id="mountains_front" alt="Mountains Front"/>
             </section>
             <section className="psychology-sec">
                 <h2>Trading Psychology</h2>

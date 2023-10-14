@@ -2,32 +2,57 @@
 
 .trading-psychology-page {
     overflow-x: hidden;
-    background: #50e5ff;
+    background: linear-gradient(#2b1055, #7597de);
     min-height: 100vh;
 }
 
 .psychology-parallax {
     position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    overflow: hidden;
+}
+
+.psychology-parallax::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
 }
 
 .psychology-parallax img {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     pointer-events: none;
 }
 
-#forex-text {
+.psychology-parallax img#moon {
+    mix-blend-mode: screen;
+}
+
+.psychology-parallax img#mountains_front {
+    z-index: 10;
+}
+
+#text-p {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 4em;
-    color: #112434;
+    margin-bottom: 20%;
+    right: -350px;
+    color: #004cff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
 }
 
 .psychology-sec {
@@ -185,3 +210,4 @@
     background: #2e2e2e;
     color: var(--clr);
 }
+
