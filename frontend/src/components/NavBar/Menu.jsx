@@ -62,7 +62,7 @@ function Menu() {
                 </a>
               </li>
               <li className="menu_item" data-reactid="43">
-                <a className="menu_link" href="/events" data-reactid="44">
+                <a className="menu_link" href="https://www.myfxbook.com/forex-economic-calendar" data-reactid="44">
                   <span className="link_layer" data-text="Events" data-reactid="45"></span>
                   Events
                 </a>
