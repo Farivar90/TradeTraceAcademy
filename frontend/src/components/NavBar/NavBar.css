@@ -132,6 +132,12 @@
 }
 
 .menu {
-  justify-content: center;
-  align-items: center;
+  display: flex;  /* This ensures the content inside menu is treated as flex items */
+  justify-content: center;  /* This centers the flex items on the main axis */
+  align-items: center;  /* This centers the flex items on the cross axis */
 }
+
+
+
+
+

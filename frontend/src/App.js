@@ -29,6 +29,8 @@ import SocialShare from './components/SocialShare/SocialShare';
 import News from './components/News/News';
 import Forum from './components/Forum/Forum';
 import ContactUs from './components/ContactUs/Contact';
+import CurrencyMap from './components/CurrencyMap/CurrencyMap';
+import Events from './components/Events/Events';
 import './App.css';
 
 function App() {
@@ -91,6 +93,8 @@ function App() {
             <Route exact path="/News" component={News} />
             <Route exact path="/Forum" component={Forum} />
             <Route exact path="/ContactUs" component={ContactUs} />
+            <Route exact path="/CurrencyMap" component={CurrencyMap} />
+            <Route exact path="/events" component={Events} />
             <ProtectedRoute exact path="/profile" component={Profile} />
             <Redirect to="/" />
           </Switch>

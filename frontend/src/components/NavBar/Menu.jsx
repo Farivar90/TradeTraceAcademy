@@ -24,31 +24,31 @@ function Menu() {
         <nav data-reactid="16">
             <ul className="menu_list menu_list-main" data-reactid="17">
               <li className="menu_item menu_item-big" data-reactid="18">
-                <a className="menu_link menu_link-anim" href="/about" data-reactid="19">
+                <a className="menu_link menu_link-anim" href="/Lessons" data-reactid="19">
                   <span className="link_layer" data-text="Lessons" data-reactid="20"></span>
                   Lessons
                 </a>
               </li>
               <li className="menu_item menu_item-big" data-reactid="22">
-                <a className="menu_link menu_link-anim" href="/services" data-reactid="23">
+                <a className="menu_link menu_link-anim" href="/News" data-reactid="23">
                   <span className="link_layer" data-text="News" data-reactid="24"></span>
                   News
                 </a>
               </li>
               <li className="menu_item menu_item-big" data-reactid="26">
-                <a className="menu_link menu_link-anim" href="/our-work" data-reactid="27">
+                <a className="menu_link menu_link-anim" href="/Forum" data-reactid="27">
                   <span className="link_layer" data-text="Forum" data-reactid="28"></span>
                   Forum
                 </a>
               </li>
               <li className="menu_item menu_item-big" data-reactid="30">
-                <a className="menu_link menu_link-anim" href="/careers" data-reactid="31">
-                  <span className="link_layer" data-text="Currency`s Map" data-reactid="32"></span>
+                <a className="menu_link menu_link-anim" href="/CurrencyMap" data-reactid="31">
+                  <span className="link_layer" data-text="Currency's Map" data-reactid="32"></span>
                   Currency's Map
                 </a>
               </li>
               <li className="menu_item menu_item-big" data-reactid="34">
-                <a className="menu_link menu_link-anim" href="/contact" data-reactid="35">
+                <a className="menu_link menu_link-anim" href="/ContactUs" data-reactid="35">
                   <span className="link_layer" data-text="Contact Us" data-reactid="36"></span>
                   Contact Us
                 </a>
@@ -56,7 +56,7 @@ function Menu() {
             </ul>
             <ul className="menu_list menu_list-alter" data-reactid="38">
               <li className="menu_item" data-reactid="39">
-                <a className="menu_link" href="/blog" data-reactid="40">
+                <a className="menu_link" href="https://www.tradingview.com/" data-reactid="40">
                   <span className="link_layer" data-text="Trading View" data-reactid="41"></span>
                   Trading View
                 </a>

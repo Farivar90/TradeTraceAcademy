@@ -56,7 +56,6 @@
   opacity: 0; /* Initially hidden */
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  top: 250%;
   color: rgb(3, 3, 3);
   text-align: center;
   width: 95%;
@@ -70,7 +69,6 @@
   opacity: 0; /* Initially hidden */
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  top: 440%;
   color: rgb(255, 255, 255);
   text-align: center;
   width: 95%;

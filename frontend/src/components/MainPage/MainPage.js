@@ -74,9 +74,9 @@ function MainPage() {
             <div className='main-t1'>
                 <h1 className='name-main'>
                     TradeTrace Academy
-                    <div className='logo-svg'>
+                    {/* <div className='logo-svg'>
                         < LogoSVG aria-hidden="true"/>
-                    </div>
+                    </div> */}
                 </h1>
                 {showSlogan && (
                     <h2 className='slogan-main tracking-in-expand'>
@@ -92,10 +92,11 @@ function MainPage() {
             <div
                 className="parallax-image"
                 style={{ backgroundImage: `url(${ecb})` }}
-                alt='ECB'
-            ></div>
+                alt='ECB'>
             <div className="bg-overlay" ref={ecbOverlayRef}></div>
                 <h1 className='info-mainbg1' ref={ecbInfoRef}>Seat of the European Central Bank</h1>
+            </div>
+
             </div>
 
             </div>
@@ -126,12 +127,12 @@ function MainPage() {
             <div
                 className="parallax-image"
                 style={{ backgroundImage: `url(${sft})` }}
-                alt='SFT'
-            ></div>
+                alt='SFT'>
             <div className="bg-overlay" ref={sftOverlayRef}></div>
                 <h1 className='info-mainbg2' ref={sftInfoRef}>Shanghai World Financial Center</h1>
+            </div>
                 <h1 id='cube-info'> 
-                    These are most important FOREX pairs. By click on them you can see their current chart.
+                    These are most important FOREX pairs. By click on each you can see their current chart.
                 </h1>
             <div className='after-c'>
                 <Cube />
