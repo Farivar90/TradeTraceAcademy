@@ -4,6 +4,7 @@ import './NavBar.css';
 import { logout } from '../../store/session';
 import navlogo from '../../assets/transTT.png'
 import React, { useEffect, useState } from 'react';
+import Menu from './Menu';
 
 function NavBar () {
   const loggedIn = useSelector(state => !!state.session.user);
@@ -18,7 +19,7 @@ function NavBar () {
   useEffect(() => {
     const handleScroll = () => {
         const offset = window.scrollY;
-        if (offset > 50) { // You can adjust this value
+        if (offset > 50) {
             setScrolled(true);
         } else {
             setScrolled(false);
@@ -35,9 +36,9 @@ function NavBar () {
   const getLinks = () => {
     if (loggedIn) {
       return (
-        <div className="links-nav">
+        <div className="links-nav signup">
           <Link className="glow-on-hover" to={'/profile'}>Profile</Link>
-          <button className="glow-on-hover" onClick={logoutUser}>Logout</button>
+          <Link className="glow-on-hover" onClick={logoutUser}>Logout</Link>
         </div>
       );
     } else {
@@ -61,6 +62,9 @@ function NavBar () {
         <Link to={'/'}>
           <img src={navlogo} alt="navlogo" />
         </Link>
+      </div>
+      <div className="menu">
+        <Menu />
       </div>
       <div className="nav-links">
           { getLinks() }

@@ -28,6 +28,7 @@ import EmotionalManagement from './components/Lessons/TradingPsychology/2Emotion
 import SocialShare from './components/SocialShare/SocialShare';
 import News from './components/News/News';
 import Forum from './components/Forum/Forum';
+import ContactUs from './components/ContactUs/Contact';
 import './App.css';
 
 function App() {
@@ -89,6 +90,7 @@ function App() {
             <Route exact path="/Lessons/TradingPsychology/EmotionalManagement" component={EmotionalManagement} />
             <Route exact path="/News" component={News} />
             <Route exact path="/Forum" component={Forum} />
+            <Route exact path="/ContactUs" component={ContactUs} />
             <ProtectedRoute exact path="/profile" component={Profile} />
             <Redirect to="/" />
           </Switch>
