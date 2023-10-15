@@ -59,9 +59,9 @@ function MainPage() {
     
     return (
         <div className="main-page" role="main" aria-label="Main Content">
-            <div className='bg-main'>
+            {/* <div className='bg-main'> */}
                 {/* <img src={bg} alt="Federal Reserve Building" /> */}
-                <div className="bg-overlay" ref={overlayRef}></div>
+                {/* <div className="bg-overlay" ref={overlayRef}></div> */}
                 <div>
             <div
                 className="parallax-image"
@@ -70,7 +70,7 @@ function MainPage() {
             ></div>
                   <h1 className='info-mainbg' ref={infoRef}>the Marriner S. Eccles Federal Reserve Board Building</h1>
                 </div>
-            </div>
+            {/* </div> */}
             <div className='main-t1'>
                 <h1 className='name-main'>
                     TradeTrace Academy
@@ -130,9 +130,11 @@ function MainPage() {
             ></div>
             <div className="bg-overlay" ref={sftOverlayRef}></div>
                 <h1 className='info-mainbg2' ref={sftInfoRef}>Shanghai World Financial Center</h1>
+                <h1 id='cube-info'> 
+                    These are most important FOREX pairs. By click on them you can see their current chart.
+                </h1>
             <div className='after-c'>
                 <Cube />
-                <h1>dgag</h1>
             </div>
         </div>
     );

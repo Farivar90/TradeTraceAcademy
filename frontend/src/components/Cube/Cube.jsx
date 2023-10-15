@@ -9,7 +9,8 @@ const Cube = () => {
       	<div className="cube">
         {/* Front Face  */}
         <div className="face front" style={{"--x": "-1", "--y": "0"}}>
-            <span style={{"--i": "3"}}>A1</span>
+            <span style={{"--i": "3"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/EURAUD/'}
+            >EUR/AUD</span>
             <span style={{"--i": "2"}}>A2</span>
             <span style={{"--i": "1"}}>A3</span>
         </div>
@@ -27,7 +28,8 @@ const Cube = () => {
         </div>
 		{/* Front Face */}
         <div className="face front" style={{"--x": "0", "--y": "0"}}>
-            <span style={{"--i": "3"}}>B1</span>
+            <span style={{"--i": "3"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/AUDJPY/'}
+            >AUD/JPY</span>
             <span style={{"--i": "2"}}>B2</span>
             <span style={{"--i": "1"}}>B3</span>
         </div>
@@ -45,9 +47,12 @@ const Cube = () => {
         </div>
 		{/* Front Face  */}
         <div className="face front" style={{"--x": "1", "--y": "0"}}>
-            <span style={{"--i": "3"}}>C1</span>
-            <span style={{"--i": "2"}}>C2</span>
-            <span style={{"--i": "1"}}>C3</span>
+            <span style={{"--i": "3"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/EURGBP/'}
+            >EUR/GBP</span>
+            <span style={{"--i": "2"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/GBPAUD/'}
+            >GBP/AUD</span>
+            <span style={{"--i": "1"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/GBPCAD/'}
+            >GBP/CAD</span>
         </div>
         {/* Top Face  */}
         <div className="face top" style={{"--x": "1", "--y": "0"}}>
@@ -65,7 +70,8 @@ const Cube = () => {
 	<div className="cube">
 		{/* Front Face  */}
         <div className="face front" style={{"--x": "-1", "--y": "0"}}>
-            <span style={{"--i": "3"}}>D1</span>
+            <span style={{"--i": "3"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/NZDJPY/'}
+            >NZD/JPY</span>
             <span style={{"--i": "2"}}>D2</span>
             <span style={{"--i": "1"}}>D3</span>
         </div>
@@ -83,7 +89,8 @@ const Cube = () => {
         </div>
 		{/* Front Face  */}
         <div className="face front" style={{"--x": "0", "--y": "0"}}>
-            <span style={{"--i": "3"}}>E1</span>
+            <span style={{"--i": "3"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/AUDNZD/'}
+            >AUD/NZD</span>
             <span style={{"--i": "2"}}>E2</span>
             <span style={{"--i": "1"}}>E3</span>
         </div>
@@ -101,9 +108,12 @@ const Cube = () => {
         </div>
 		{/* Front Face  */}
         <div className="face front" style={{"--x": "1", "--y": "0"}}>
-            <span style={{"--i": "3"}}>F1</span>
-            <span style={{"--i": "2"}}>F2</span>
-            <span style={{"--i": "1"}}>F3</span>
+            <span style={{"--i": "3"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/EURCHF/'}
+            >EUR/CHF</span>
+            <span style={{"--i": "2"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/EURNZD/'}
+            >EUR/NZD</span>
+            <span style={{"--i": "1"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/AUDCAD/'}
+            >AUD/CAD</span>
         </div>
         {/* Top Face  */}
         <div className="face top" style={{"--x": "1", "--y": "0"}}>
@@ -121,9 +131,12 @@ const Cube = () => {
 	<div className="cube">
 		{/* Front Face  */}
         <div className="face front" style={{"--x": "-1", "--y": "0"}}>
-            <span style={{"--i": "3"}}>G1</span>
-            <span style={{"--i": "2"}}>G2</span>
-            <span style={{"--i": "1"}}>G3</span>
+            <span style={{"--i": "3"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/NZDUSD/'}
+            >NZD/USD</span>
+            <span style={{"--i": "2"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/EURJPY/'}
+            >EUR/JPY</span>
+            <span style={{"--i": "1"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/GBPJPY/'}
+            >GBP/JPY</span>
         </div>
         {/* Top Face  */}
         <div className="face top" style={{"--x": "-1", "--y": "0"}}>
@@ -139,9 +152,12 @@ const Cube = () => {
         </div>
 		{/* Front Face  */}
         <div className="face front" style={{"--x": "0", "--y": "0"}}>
-            <span style={{"--i": "3"}}>USD/CHF</span>
-            <span style={{"--i": "2"}}>H2</span>
-            <span style={{"--i": "1"}}>H3</span>
+            <span style={{"--i": "3"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/USDCHF/'}
+            >USD/CHF</span>
+            <span style={{"--i": "2"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/USDCAD/'}
+            >USD/CAD</span>
+            <span style={{"--i": "1"}} onClick={() => window.location.href='https://www.tradingview.com/symbols/AUDUSD/'}
+            >AUD/USD</span>
         </div>
         {/* Top Face  */}
         <div className="face top" style={{"--x": "0", "--y": "0"}}>

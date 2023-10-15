@@ -14,7 +14,7 @@
 }
 
 .parallax-image {
-  height: 120vh;
+  height: 100vh;
   object-fit: cover;
   background-attachment: fixed;
   background-position: center top;
@@ -56,7 +56,7 @@
   opacity: 0; /* Initially hidden */
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  top: 270%;
+  top: 250%;
   color: rgb(3, 3, 3);
   text-align: center;
   width: 95%;
@@ -70,7 +70,7 @@
   opacity: 0; /* Initially hidden */
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  top: 470%;
+  top: 440%;
   color: rgb(255, 255, 255);
   text-align: center;
   width: 95%;
@@ -291,3 +291,16 @@
   width: 20%;
 }
 
+#cube-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0;
+  color: #48ff00;
+  z-index: 1000 !important;
+  font-size: 200%;
+  font-family: 'Abel', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+}

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './TradingPlatforms.css';
+import AnimatedSVG from  '../../Loading/ALoader';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,7 +26,7 @@ const TradingPlatforms = () => {
 
                 
             </section>
-
+            <AnimatedSVG/>
 
         <div className="itf-container">
             <div className='back-to-int'>
