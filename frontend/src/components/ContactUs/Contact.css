@@ -232,7 +232,7 @@
     color: #ffffff;
 }
 
-.content img {
+.contact img {
     width: 15%;
     height: 15%;
 }
@@ -240,6 +240,9 @@
 .glow-logo {
   filter: drop-shadow(0 0 4px #7bff00);
   animation: glow 2s infinite;
+  padding-bottom: 2px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0005);
 }
 @keyframes glow {
     0% {

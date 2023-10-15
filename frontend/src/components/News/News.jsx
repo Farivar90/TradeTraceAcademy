@@ -6,7 +6,7 @@ const News = () => {
     return (
         <div className='news-main'>
                 <div className="imageContainer">
-                <img className='news-bg' src={NewsBg} alt="newsbg" />
+                {/* <img className='news-bg' src={NewsBg} alt="newsbg" /> */}
             </div>
         </div>
     );

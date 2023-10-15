@@ -96,7 +96,27 @@
   font-size: 400%;
   font-weight: bold;
   text-align: center;
-  padding: 5%;
+  padding: 7%;
+  filter: drop-shadow(0 0 4px #48ff00);
+  animation: glowname 10s infinite;
+  padding-bottom: 5px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0005);
+}
+
+@keyframes glowname {
+  0%, 100% {
+      filter: drop-shadow(0 0 2px #48ff00);
+  }
+  25% {
+      filter: drop-shadow(0 0 2px #00ffd5);
+  }
+  50% {
+      filter: drop-shadow(0 0 2px #002bff);
+  }
+  75% {
+      filter: drop-shadow(0 0 2px #001ba4);
+  }
 }
 
 
@@ -109,7 +129,7 @@
   font-weight:initial;
   background-clip: text;
   color: transparent;
-  padding-bottom: 5%;
+  padding: 5%;
 }
 
 .tracking-in-expand {
@@ -282,6 +302,7 @@
 .after-c {
   background-color: rgb(40, 40, 40);
   padding: 20%;
+  
 }
 
 
@@ -301,4 +322,5 @@
   font-family: 'Abel', sans-serif;
   width: 80%;
   margin: 0 auto;
+  
 }

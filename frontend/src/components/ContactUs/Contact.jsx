@@ -12,8 +12,8 @@ const ContactUs = () => {
                 <img src={farigif} alt="fari" />
             </div>
             <section className="contact">
-                <div className="content">
                     <img className="glow-logo" id='FA-logo' src={FAlogoSvg} alt="FA" />
+                <div className="content">
                     <h2>Contact Me</h2>
                     <p>I'd love to hear from you! Whether you have a question, feedback, or just want to chat, feel free to reach out. Here's how you can get in touch:</p>
                 </div>
