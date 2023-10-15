@@ -1,6 +1,9 @@
 import React from 'react';
 import farigif from '../../assets/farigif.gif';
 import './Contact.css';
+import FAlogo from '../../assets/FA-logo-t.png';
+import FAlogoSvg from '../../assets/FA-logo-svg.svg';
+
 
 const ContactUs = () => {
     return (
@@ -10,6 +13,7 @@ const ContactUs = () => {
             </div>
             <section className="contact">
                 <div className="content">
+                    <img className="glow-logo" id='FA-logo' src={FAlogoSvg} alt="FA" />
                     <h2>Contact Me</h2>
                     <p>I'd love to hear from you! Whether you have a question, feedback, or just want to chat, feel free to reach out. Here's how you can get in touch:</p>
                 </div>

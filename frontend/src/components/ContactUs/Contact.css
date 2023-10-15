@@ -231,3 +231,24 @@
     text-decoration: none;
     color: #ffffff;
 }
+
+.content img {
+    width: 15%;
+    height: 15%;
+}
+
+.glow-logo {
+  filter: drop-shadow(0 0 4px #7bff00);
+  animation: glow 2s infinite;
+}
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 4px #7bff00);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px #7bff00);
+    }
+    100% {
+        filter: drop-shadow(0 0 4px #7bff00);
+    }
+}
