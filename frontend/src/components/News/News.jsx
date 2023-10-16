@@ -1,57 +1,54 @@
 import React, { useEffect }  from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import NewsBg from '../../assets/news1.gif';
 import NewsBg from '../../assets/news-table.webp';
 import NewsW1 from '../../assets/newswoman.png';
 import NewsW2 from '../../assets/newswoman2.png';
+import FAlogo from '../../assets/FA-logo-t.png';
+import TTlogo from '../../assets/ttlogo.png';
+import TTname from '../../assets/ttname.png';
 import './News.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const News = () => {
 useEffect(() => {
-    gsap.from("#forex-m1", {
+
+    gsap.from("#news-woman", {
         scrollTrigger: {
             scrub: true
         },
-        y: 100,
+        x: -70, 
     });
-    gsap.from("#forex-m2", {
+    gsap.from("#news-woman2", {
         scrollTrigger: {
             scrub: true
         },
-        y: 50,
+        x: 70,
     });
-    gsap.from("#forex-t2", {
+    gsap.from("#TT-name", {
         scrollTrigger: {
             scrub: true
         },
-        x: -50,
+        x: 0, y: -400
     });
-    gsap.from("#forex-t1", {
+    gsap.from("#TT-logo", {
         scrollTrigger: {
             scrub: true
         },
-        x: 50,
+        x: -300, y: -200,
     });
-    gsap.from("#forex-man", {
+    gsap.from("#FA-logo", {
         scrollTrigger: {
             scrub: true
         },
-        x: -250,
-    });
-    gsap.from("#forex-plants", {
-        scrollTrigger: {
-            scrub: true
-        },
-        x: -50,
+        x: 300, y: -200,
     });
     gsap.from("#news-text", {
         scrollTrigger: {
             scrub: true
         },
-        x: 600,
+        x: 800,
     });
 }, []);
     return (
@@ -61,6 +58,12 @@ useEffect(() => {
                 <img id='news-table' src={NewsBg} alt="news table" />
                 <img id='news-woman' src={NewsW1} alt="news woman" />
                 <img id='news-woman2' src={NewsW2} alt="news woman2" />
+                <img id='FA-logo' src={FAlogo} alt="FA logo" />
+                <img id='TT-logo' src={TTlogo} alt="TT logo" />
+                <img id='TT-name' src={TTname} alt="TT name" />
+            </section>
+            <section className="news-sec">
+
             </section>
                 
            
