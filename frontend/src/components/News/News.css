@@ -1,6 +1,6 @@
 .news-main {
-    background-color:            rgb(40, 40, 40);
-    padding-bottom: 10%;
+    background-color: rgb(40, 40, 40);
+    padding-bottom: 10vh;
     overflow-x: hidden;
     min-height: 100vh;
 }
@@ -17,22 +17,19 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     pointer-events: none;
 }
 
 #news-text {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 4em;
     color: #078cf9;
     z-index: 20;
     animation: glowNews 2s infinite;
-    padding-bottom: 1px;
-    -webkit-box-reflect: below 1px
-      linear-gradient(transparent, transparent, #0005);
+    padding-bottom: 0.5px;
+    /* -webkit-box-reflect: below 1vw linear-gradient(transparent, transparent, #0005); */
 }
+
 @keyframes glowNews {
     0% {
         filter: drop-shadow(0 0 4px #078cf9);
@@ -45,40 +42,30 @@
     }
 }
 
-
 .news-main img {
-    width: 100%;
-    display: block; /* This removes the default margin at the bottom of the image */
+    width: 100vw;
+    display: block;
 }
 
 #news-table {
-    width: 100%;
+    width: 100vw;
     z-index: 100;
 }
 
 #news-woman {
-    width: 9%;
     z-index: 50;
-    top: 40%;
-    left: 30%;
 }
 
 #news-woman2 {
-    width: 15%;
     z-index: 50;
-    transform: scaleX(-1);
-    top: 40%;
-    left: 60%;
 }
 
 #FA-logo {
-    width: 15%;
     z-index: 30;
-    top: 40%;
-    left: 80%;
-    animation: glowNews 2s infinite;
+    animation: glowTTname 2s infinite;
 }
-/* @keyframes glowFAnews {
+
+@keyframes glowTTname {
     0% {
         filter: drop-shadow(0 0 2px #7bff00);
     }
@@ -88,19 +75,26 @@
     100% {
         filter: drop-shadow(0 0 2px #7bff00);
     }
-} */
+}
 
 #TT-logo {
-    width: 20%;
     z-index: 30;
-    top: 37%;
-    left: 0%;
     animation: glowNews 2s infinite;
 }
 
 #TT-name {
-    width: 20%;
     z-index: 30;
-    top: 37%;
-    left: 40%;
+    animation: glowTTname 2s infinite;
+}
+
+.news-sec {
+    position: relative;
+    padding: 10vh;
+    background: #112434;
+}
+
+.news-sec h2, .news-sec h3, .news-sec p {
+    font-size: 3vw;
+    color: #fff;
+    margin-bottom: 1vw;
 }
