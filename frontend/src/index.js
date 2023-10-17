@@ -18,9 +18,10 @@ function Root() {
   );
 }
 
-ReactDOM.render(
+// Use the new createRoot API for React 18
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <Root />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
