@@ -13,10 +13,10 @@ const EmotionalManagement = () => {
         <div className='risk'>
             <div className="imageContainer">
                 <img className='emotionbg' src={emotionBackground} alt="Emotional Management Background" />
-                <h1 class='animate__animated animate__bounceInLeft'>Emotional Management</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>Emotional Management</h1>
             </div>
             <div className='risk-content'>
-                <h4 class='animate__animated animate__bounceIn'>4 minutes read</h4>
+                <h4 className='animate__animated animate__bounceIn'>4 minutes read</h4>
                 <p>Emotional management in forex trading refers to the ability of a trader to remain calm and composed, especially in the face of market volatility. It's essential for making rational decisions and avoiding impulsive actions based on fear or greed.</p>
                 <h3>Importance of Emotional Management</h3>
                 <p>Being emotionally stable can help traders stick to their trading plan, maintain discipline, and avoid making hasty decisions that can lead to significant losses.</p>

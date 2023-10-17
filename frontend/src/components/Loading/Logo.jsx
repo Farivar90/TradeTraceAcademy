@@ -34,12 +34,12 @@ const LogoSVG = () => {
             <defs>
     
     <linearGradient id="aiGrad" x1="513.98" y1="290" x2="479.72" y2="320" gradientUnits="userSpaceOnUse">
-        <stop offset="0" stopColor="#009dff" stop-opacity="1" />
+        <stop offset="0" stopColor="#009dff" stopOpacity="1" />
         <stop offset=".15" stopColor="#00d9ff" />
         <stop offset=".4" stopColor="#001ba4" />
         <stop offset=".6" stopColor="#002bff" />
         <stop offset=".78" stopColor="##009dff" />
-        <stop offset="1" stopColor="#2200ff" stop-opacity="1" />
+        <stop offset="1" stopColor="#2200ff" stopOpacity="1" />
     </linearGradient>
 
     </defs>

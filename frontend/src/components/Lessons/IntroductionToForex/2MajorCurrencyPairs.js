@@ -15,10 +15,10 @@ const MajorCurrencyPairs = () =>{
         <div className='wif'>
             <div className="imageContainer">
                 <img className='atcbg' src={mcp} alt="atcbg" />
-                <h1 class='animate__animated animate__bounceInLeft'>Major Currency Pairs</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>Major Currency Pairs</h1>
             </div>
             <div className='wif-content'>
-            <h4 class='animate__animated animate__bounceIn'>5 minutes read</h4>
+            <h4 className='animate__animated animate__bounceIn'>5 minutes read</h4>
             <p>
                 The major currency pairs are some of the most popular currency combinations in the forex market. Prices in these pairs often move in tighter bands, but their movements can still be volatile. Learn about the major forex pairs here.
             </p>
@@ -67,7 +67,7 @@ const MajorCurrencyPairs = () =>{
             <div className='wrapper-wif'>
                 <input type="checkbox" className="checkbox-wif" />
                 <div className="video-wif">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tFaQOI0xdWE?si=k07dgxehuJJqAYuJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tFaQOI0xdWE?si=k07dgxehuJJqAYuJ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     <button className="close-video" onClick={closeVideo}>Close Video</button>
                 </div>
                 <div className="text-wif">

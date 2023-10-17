@@ -13,10 +13,10 @@ const Indicators = () => {
         <div className='chart'>
             <div className="imageContainer">
                 <img className='indicatorsbg' src={indicatorsBackground} alt="Indicators Background" />
-                <h1 class='animate__animated animate__bounceInLeft'>Indicators</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>Indicators</h1>
             </div>
             <div className='chart-content'>
-                <h4 class='animate__animated animate__bounceIn'>5 minutes read</h4>
+                <h4 className='animate__animated animate__bounceIn'>5 minutes read</h4>
                 <h3>Moving Averages</h3>
                 <p>Moving averages smooth out price data to create a single flowing line, which makes spotting trends easier.</p>
                 <h3>MACD (Moving Average Convergence Divergence)</h3>
@@ -29,7 +29,8 @@ const Indicators = () => {
                 <div className='wrapper-chart'>
                     <input type="checkbox" className="checkbox-chart" />
                     <div className="video-chart">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PfquDvN0fwI?si=1aIY6V9bvmvlT42r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PfquDvN0fwI?si=1aIY6V9bvmvlT42r" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                        
+                    <button className="close-video" onClick={closeVideo}>Close Video</button>
                     </div>
                     <div className="text-chart">
                         <span data-text="Watch the video"></span>

@@ -13,10 +13,10 @@ const EconomicIndicators = () => {
         <div className='ei'>
             <div className="imageContainer">
                 <img className='eibg' src={eiBackground} alt="Economic Indicators Background" />
-                <h1 class='animate__animated animate__bounceInLeft' id='ecoind'>Economic Indicators</h1>
+                <h1 className='animate__animated animate__bounceInLeft' id='ecoind'>Economic Indicators</h1>
             </div>
             <div className='ei-content'>
-                <h4 class='animate__animated animate__bounceIn'>5 minutes read</h4>
+                <h4 className='animate__animated animate__bounceIn'>5 minutes read</h4>
                 <p>Economic indicators are statistics about economic activities that allow analysis of economic performance and predictions of future performance. They play a crucial role in the forex market, influencing traders' decisions and currency values.</p>
                 <h3>Types of Economic Indicators</h3>
                 <p>Economic indicators can be broadly categorized into three types: Leading, Lagging, and Coincident indicators. Each type provides different insights into the state of an economy.</p>
@@ -27,7 +27,7 @@ const EconomicIndicators = () => {
                 <div className='wrapper-wif'>
                     <input type="checkbox" className="checkbox-wif" />
                     <div className="video-wif">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XOiZGFc5N1s?si=ZWvSXmMpkmjkpkdK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XOiZGFc5N1s?si=ZWvSXmMpkmjkpkdK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         <button className="close-video" onClick={closeVideo}>Close Video</button>
                     </div>
                     <div className="text-wif">

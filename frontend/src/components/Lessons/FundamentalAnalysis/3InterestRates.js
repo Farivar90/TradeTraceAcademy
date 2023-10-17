@@ -13,10 +13,10 @@ const InterestRates = () => {
         <div className='ei'>
             <div className="imageContainer">
                 <img className='irbg' src={irBackground} alt="Interest Rates Background" />
-                <h1 class='animate__animated animate__bounceInLeft'>Interest Rates and Central Bank Decisions</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>Interest Rates and Central Bank Decisions</h1>
             </div>
             <div className='ei-content'>
-                <h4 class='animate__animated animate__bounceIn'>5 minutes read</h4>
+                <h4 className='animate__animated animate__bounceIn'>5 minutes read</h4>
                 <p>Interest rates set by central banks, such as the Federal Reserve in the US, play a crucial role in the forex market. They can influence the attractiveness of a country's currency and its overall economic health.</p>
                 <h3>Why Interest Rates Matter</h3>
                 <p>Higher interest rates offer lenders in an economy a higher return relative to other countries. Therefore, higher interest rates attract foreign capital and cause the exchange rate to rise.</p>
@@ -25,7 +25,7 @@ const InterestRates = () => {
                 <div className='wrapper-wif'>
                     <input type="checkbox" className="checkbox-wif" />
                     <div className="video-wif">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HBmOBOqVT74?si=41svEOD9kVbh6wFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HBmOBOqVT74?si=41svEOD9kVbh6wFe" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
                     </div>
                     <div className="text-wif">
                         <span data-text="Watch the video"></span>

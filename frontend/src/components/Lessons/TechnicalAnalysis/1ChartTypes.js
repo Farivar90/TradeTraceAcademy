@@ -17,10 +17,10 @@ const ChartTypes = () => {
         <div className='chart'>
             <div className="imageContainer" id='ctc'>
                 <img className='chartbg' id='ctbg' src={chartBackground} alt="Chart Types Background" />
-                <h1 class='animate__animated animate__bounceInLeft'>Chart Types</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>Chart Types</h1>
             </div>
             <div className='chart-content'>
-                <h4 class='animate__animated animate__bounceIn'>4 minutes read</h4>
+                <h4 className='animate__animated animate__bounceIn'>4 minutes read</h4>
                 <h3>Line Chart</h3>
                 <p>A line chart connects the closing prices over a specified period. It's simple and provides a clear visual of a security's price movement.</p>
                 <div className='chartpiccon'>
@@ -39,7 +39,7 @@ const ChartTypes = () => {
                 <div className='wrapper-chart'>
                     <input type="checkbox" className="checkbox-chart" />
                     <div className="video-chart">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uIsj41lD_Yc?si=7F80oe3DULZTdU2p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uIsj41lD_Yc?si=7F80oe3DULZTdU2p" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
                     </div>
                     <div className="text-chart">
                         <span data-text="Watch the video"></span>

@@ -13,10 +13,10 @@ const RiskManagement = () => {
         <div className='risk'>
             <div className="imageContainer" id='rmc'>
                 <img className='riskbg' id='rmbg' src={riskBackground} alt="Risk Management Background" />
-                <h1 class='animate__animated animate__bounceInLeft'>Risk Management</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>Risk Management</h1>
             </div>
             <div className='risk-content'>
-                <h4 class='animate__animated animate__bounceIn'>4 minutes read</h4>
+                <h4 className='animate__animated animate__bounceIn'>4 minutes read</h4>
                 <p>Risk management in forex trading is the process of identifying, assessing, and prioritizing the risks associated with trading decisions. It involves evaluating the potential losses from an investment and then taking appropriate actions to mitigate or eliminate the risks.</p>
                 <h3>Importance of Risk Management</h3>
                 <p>Effective risk management can help traders protect their capital and limit potential losses. It's an essential component of long-term trading success.</p>

@@ -15,10 +15,10 @@ const WhatIsForex = () =>{
         <div className='wif'>
             <div className="imageContainer">
                 <img className='atcbg' src={atc} alt="atcbg" />
-                <h1 class='animate__animated animate__bounceInLeft'>What is Forex?</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>What is Forex?</h1>
             </div>
             <div className='wif-content'>
-            <h4 class='animate__animated animate__bounceIn'>3 minutes read</h4>
+            <h4 className='animate__animated animate__bounceIn'>3 minutes read</h4>
             <p>The foreign exchange market – also known as forex or FX – is the world’s most traded market.
                 <br />
                 According to the Bank for International Settlements, global forex trading in 2022 averaged over $7.5 trillion each day. To put that into context, trading on the stock market averages around $553 billion each month.
@@ -32,11 +32,11 @@ const WhatIsForex = () =>{
             <h3>How forex trading works</h3>
             <p>Forex is traded in pairs, meaning that when you trade forex, you are exchanging one currency for another. When buying EUR/USD, for example, you’re buying euros while selling the US dollar.
                 <br />
-                <p>
+                
                 If the euro strengthens against the dollar, your position will increase in value
-                </p>
-                <p>If the euro weakens against the dollar, it will decrease in value
-                </p>                    
+                
+                If the euro weakens against the dollar, it will decrease in value
+                                    
                 <br />
                     Currency markets never decline in absolute terms – for one currency to go up, there will be others weakening against it. All currencies cannot go up at the same time. There is always going to be a winner and a loser. 
                 <br />
@@ -60,7 +60,7 @@ const WhatIsForex = () =>{
             <div className='wrapper-wif'>
                 <input type="checkbox" className="checkbox-wif" />
                 <div className="video-wif">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WkwOfNCRi38?si=NpglCNLa0WRXMk3m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WkwOfNCRi38?si=NpglCNLa0WRXMk3m" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     <button className="close-video" onClick={closeVideo}>Close Video</button>
                 </div>
                 <div className="text-wif">

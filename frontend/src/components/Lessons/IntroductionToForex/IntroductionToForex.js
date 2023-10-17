@@ -89,9 +89,9 @@ const IntroductionToForex = () => {
         </div>
     </div>
     <div className="itf-box" style={{ "--clr": "#00ffe1" }}>
-    <div class="itf-content">
-                <div class="itf-icon"><ion-icon name="logo-usd"></ion-icon></div>
-                <div class="itf-text">
+    <div className="itf-content">
+                <div className="itf-icon"><ion-icon name="logo-usd"></ion-icon></div>
+                <div className="itf-text">
                     <h3>2. Major Currency Pairs</h3>
                     <p>The major currency pairs are some of the most popular currency combinations in the forex market. Prices in these pairs often move in tighter bands, but their movements can still be volatile</p>
                     <a href="/Lessons/IntroductionToForex/MajorCurrencyPairs">Read More</a>
@@ -99,9 +99,9 @@ const IntroductionToForex = () => {
             </div>
     </div>
     <div className="itf-box" style={{ "--clr": "#5b98eb" }}>
-    <div class="itf-content">
-                <div class="itf-icon"><ion-icon name="time-outline"></ion-icon></div>
-                <div class="itf-text">
+    <div className="itf-content">
+                <div className="itf-icon"><ion-icon name="time-outline"></ion-icon></div>
+                <div className="itf-text">
                     <h3>3. Forex Market Hours</h3>
                     <p>The forex market is open 24 hours a day during the weekdays which allows traders to potentially trade all day and all night.</p>
                     <a href="/Lessons/IntroductionToForex/ForexMarketHours">Read More</a>

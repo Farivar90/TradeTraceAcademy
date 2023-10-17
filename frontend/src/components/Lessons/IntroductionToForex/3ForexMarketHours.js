@@ -16,10 +16,10 @@ const ForexMarketHours = () =>{
         <div className='wif'>
             <div className="imageContainer">
                 <img className='atcbg' src={atc} alt="atcbg" />
-                <h1 class='animate__animated animate__bounceInLeft'>Forex Market Hours</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>Forex Market Hours</h1>
             </div>
             <div className='wif-content'>
-            <h4 class='animate__animated animate__bounceIn'>7 minutes read</h4>
+            <h4 className='animate__animated animate__bounceIn'>7 minutes read</h4>
             <p>The forex market is open 24 hours a day during the weekdays which allows traders to potentially trade all day and all night.
                 <br />
                 Knowing the forex market’s operating hours is essential for a trader. You need to know when the forex market opens and closes as well as the four main trading sessions.
@@ -83,7 +83,7 @@ const ForexMarketHours = () =>{
             <div className='wrapper-wif'>
                 <input type="checkbox" className="checkbox-wif" />
                 <div className="video-wif">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/5UzWPEcY7H8?si=RYw_gIlTWdDZHJQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    <button className="close-video" onClick={closeVideo}>Close Video</button>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5UzWPEcY7H8?si=RYw_gIlTWdDZHJQk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                    <button className="close-video" onClick={closeVideo}>Close Video</button>
                 </div>
                 <div className="text-wif">
                     <span data-text="Watch the video"></span>

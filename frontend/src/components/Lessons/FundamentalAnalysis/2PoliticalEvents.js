@@ -13,10 +13,10 @@ const PoliticalEvents = () => {
         <div className='ei'>
             <div className="imageContainer">
                 <img className='pebg' src={peBackground} alt="Political Events Background" />
-                <h1 class='animate__animated animate__bounceInLeft'>Political Events and Their Impact</h1>
+                <h1 className='animate__animated animate__bounceInLeft'>Political Events and Their Impact</h1>
             </div>
             <div className='ei-content'>
-                <h4 class='animate__animated animate__bounceIn'>5 minutes read</h4>
+                <h4 className='animate__animated animate__bounceIn'>5 minutes read</h4>
                 <p>Political events, ranging from elections to geopolitical tensions, can have profound effects on the forex market. Traders closely monitor these events as they can lead to significant currency value fluctuations.</p>
                 <h3>Types of Political Events</h3>
                 <p>Major political events include elections, referendums, policy changes, and international disputes. Each of these can influence investor sentiment and currency values.</p>
@@ -27,7 +27,7 @@ const PoliticalEvents = () => {
                 <div className='wrapper-wif'>
                     <input type="checkbox" className="checkbox-wif" />
                     <div className="video-wif">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/suRw_3wWTxg?si=EcCu-4sWE0PJpH6L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/suRw_3wWTxg?si=EcCu-4sWE0PJpH6L" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
                     </div>
                     <div className="text-wif">
                         <span data-text="Watch the video"></span>

@@ -101,21 +101,21 @@ function MainPage() {
 
             </div>
             <nav className='main-cards-1st' aria-label="Main Navigation">
-                <div class="card1">
+                <div className="card1">
                     <Link to="/lessons" className="no-underline">
                         <img src={lessons} alt="Lessons icon" />
                         <h3>Lessons</h3>
                         <p>A structured educational hub teaching the essentials of Forex trading, from basics to advanced techniques.</p>
                     </Link>
                 </div>
-                <div class="card2">
+                <div className="card2">
                     <Link to="/News" className="no-underline">
                         <img src={news} alt="News icon" />
                         <h3>News</h3>
                         <p>Real-time updates on Forex market events, providing insights and analysis on currency movements and global impacts.</p>
                     </Link>
                 </div>
-                <div class="card3">
+                <div className="card3">
                     <Link to="/Forum" className="no-underline">
                         <img src={forum} alt="Forum icon" />
                         <h3>Forum</h3>
