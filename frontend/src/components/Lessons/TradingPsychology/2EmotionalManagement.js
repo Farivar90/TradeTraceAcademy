@@ -25,7 +25,8 @@ const EmotionalManagement = () => {
                 <div className='wrapper-risk'>
                     <input type="checkbox" className="checkbox-risk" />
                     <div className="video-risk">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8wMExlw8OBs?si=AzO_s-UMwhU00QFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8wMExlw8OBs?si=AzO_s-UMwhU00QFs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                        
+                    <button className="close-video" onClick={closeVideo}>Close Video</button>
                     </div>
                     <div className="text-risk">
                         <span data-text="Watch the video"></span>

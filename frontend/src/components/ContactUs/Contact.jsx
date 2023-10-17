@@ -28,7 +28,7 @@ const ContactUs = () => {
                             <div className="text">
                                 <h3>Location</h3>
                                 <p >
-                                    <a a className='cona' href="https://www.google.com/maps/place/Walnut+Creek,+CA,+USA/" target="_blank" rel="noopener noreferrer">
+                                    <a className='cona' href="https://www.google.com/maps/place/Walnut+Creek,+CA,+USA/" target="_blank" rel="noopener noreferrer">
                                     Walnut Creek, California, USA
                                     </a>
                                 </p>

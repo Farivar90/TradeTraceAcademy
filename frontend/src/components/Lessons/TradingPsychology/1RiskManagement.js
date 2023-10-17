@@ -25,7 +25,8 @@ const RiskManagement = () => {
                 <div className='wrapper-risk'>
                     <input type="checkbox" className="checkbox-risk" />
                     <div className="video-risk">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s8wC6U7QJmQ?si=mri9o35Pb0L4NkXF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                        <button className="close-video" onClick={closeVideo}>Close Video</button>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s8wC6U7QJmQ?si=mri9o35Pb0L4NkXF" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>                        
+                    <button className="close-video" onClick={closeVideo}>Close Video</button>
                     </div>
                     <div className="text-risk">
                         <span data-text="Watch the video"></span>
