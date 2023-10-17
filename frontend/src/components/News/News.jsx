@@ -8,52 +8,54 @@ import FAlogo from '../../assets/FA-logo-t1.png';
 import TTlogo from '../../assets/ttlogo1.png';
 import TTname from '../../assets/ttname1.png';
 import TTnews from '../../assets/news-t1.png';
+import click from '../../assets/clickhere.png';
 import './News.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const News = () => {
-useEffect(() => {
+    useEffect(() => {
 
-    const screenWidth = window.innerWidth;
+        const screenWidth = window.innerWidth;
 
-    gsap.from("#news-woman", {
-        scrollTrigger: {
-            scrub: true
-        },
-        x: -(screenWidth * 0.05),
-    });
-    gsap.from("#news-woman2", {
-        scrollTrigger: {
-            scrub: true
-        },
-        x: screenWidth * 0.05,
-    });
-    gsap.from("#TT-name", {
-        scrollTrigger: {
-            scrub: true
-        },
-        x: 0, y: -(screenWidth * 0.35)
-    });
-    gsap.from("#TT-logo", {
-        scrollTrigger: {
-            scrub: true
-        },
-        x: -(screenWidth * 0.5), y: -(screenWidth * 0.5),
-    });
-    gsap.from("#FA-logo", {
-        scrollTrigger: {
-            scrub: true
-        },
-        x: (screenWidth * 0.5), y: -(screenWidth * 0.5),
-    });
-    gsap.from("#news-text", {
-        scrollTrigger: {
-            scrub: true
-        },
-        x: (screenWidth * 0.6),
-    });
-}, []);
+        gsap.from("#news-woman", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: -(screenWidth * 0.05),
+        });
+        gsap.from("#news-woman2", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: screenWidth * 0.05,
+        });
+        gsap.from("#TT-name", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: 0, y: -(screenWidth * 0.35)
+        });
+        gsap.from("#TT-logo", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: -(screenWidth * 0.5), y: -(screenWidth * 0.5),
+        });
+        gsap.from("#FA-logo", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: (screenWidth * 0.5), y: -(screenWidth * 0.5),
+        });
+        gsap.from("#news-text", {
+            scrollTrigger: {
+                scrub: true
+            },
+            x: (screenWidth * 0.8),
+        });
+    }, []);
+
     return (
         <div >
         <div className='news-main'>
@@ -68,11 +70,24 @@ useEffect(() => {
                 <img id='FA-logo' src={FAlogo} alt="FA logo" />
                 <img id='TT-logo' src={TTlogo} alt="TT logo" />
                 <img id='TT-name' src={TTname} alt="TT name" />
+                <img 
+                    id='click-news' 
+                    src={click} 
+                    alt="click" 
+                    useMap="#clickMap" 
+                />
+                <map name="clickMap">
+                    <area 
+                        shape="rect" 
+                        coords="0%,0%,60040.5%,100004%" 
+                        alt="Clickable area" 
+                        onClick={() => window.location.href = '/News/Main'}
+                        className="clickableAreaNews"
+                    />
+                </map>            
             </section>
         </div>
-            {/* <section className="news-sec">
-                <h3>I don't have enough budget to purchase the paid plan for the news API, so the data is not up-to-date!</h3>
-            </section> */}
+
         </div>
                 
            

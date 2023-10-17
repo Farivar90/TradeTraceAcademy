@@ -27,6 +27,7 @@ import RiskManagement from './components/Lessons/TradingPsychology/1RiskManageme
 import EmotionalManagement from './components/Lessons/TradingPsychology/2EmotionalManagement';
 import SocialShare from './components/SocialShare/SocialShare';
 import News from './components/News/News';
+import NewsMain from './components/News/NewsMain';
 import Forum from './components/Forum/Forum';
 import ContactUs from './components/ContactUs/Contact';
 import CurrencyMap from './components/CurrencyMap/CurrencyMap';
@@ -91,6 +92,7 @@ function App() {
             <Route exact path="/Lessons/TradingPsychology/RiskManagement" component={RiskManagement} />
             <Route exact path="/Lessons/TradingPsychology/EmotionalManagement" component={EmotionalManagement} />
             <Route exact path="/News" component={News} />
+            <Route exact path="/News/Main" component={NewsMain} />
             <Route exact path="/Forum" component={Forum} />
             <Route exact path="/ContactUs" component={ContactUs} />
             <Route exact path="/CurrencyMap" component={CurrencyMap} />

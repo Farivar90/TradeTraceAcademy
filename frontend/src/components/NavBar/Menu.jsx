@@ -41,12 +41,12 @@ function Menu() {
                   Forum
                 </a>
               </li>
-              <li className="menu_item menu_item-big" data-reactid="30">
+              {/* <li className="menu_item menu_item-big" data-reactid="30">
                 <a className="menu_link menu_link-anim" href="/CurrencyMap" data-reactid="31">
                   <span className="link_layer" data-text="Currency's Map" data-reactid="32"></span>
                   Currency's Map
                 </a>
-              </li>
+              </li> */}
               <li className="menu_item menu_item-big" data-reactid="34">
                 <a className="menu_link menu_link-anim" href="/ContactUs" data-reactid="35">
                   <span className="link_layer" data-text="Contact Us" data-reactid="36"></span>
