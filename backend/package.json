@@ -7,12 +7,13 @@
     "dev": "dotenv nodemon ./bin/www --inspect"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "csurf": "^1.11.0",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "^4.18.2",
     "express-validator": "^7.0.1",
     "gsap": "^3.12.2",
     "jsonwebtoken": "^9.0.2",

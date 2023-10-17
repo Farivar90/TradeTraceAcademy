@@ -1,5 +1,5 @@
 {
-  "name": "BuzzStream-frontend",
+  "name": "TradeTraceAcademy-frontend",
   "version": "1.0.0",
   "description": "Frontend for a Twitter clone built with the MERN stack",
   "author": "Farivar Amiri",
@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "animate.css": "^4.1.1",
     "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

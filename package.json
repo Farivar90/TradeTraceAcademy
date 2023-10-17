@@ -1,5 +1,5 @@
 {
-  "name": "tradetraceacademy",
+  "name": "TradeTraceAcademy",
   "version": "1.0.0",
   "description": "Learning Today, Leading Tomorrow's Trades- an app to learn FOREX",
   "main": "index.js",
@@ -29,6 +29,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "gsap": "^3.12.2"
   }
 }
