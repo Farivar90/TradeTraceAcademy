@@ -38,7 +38,7 @@ function NavBar () {
       return (
         <div className="links-nav signup">
           <Link className="glow-on-hover" to={'/profile'}>Profile</Link>
-          <Link className="glow-on-hover" onClick={logoutUser}>Logout</Link>
+          <Link to="/" className="glow-on-hover" onClick={logoutUser}>Logout</Link>
         </div>
       );
     } else {
