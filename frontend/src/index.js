@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
@@ -19,9 +19,10 @@ function Root() {
 }
 
 // Use the new createRoot API for React 18
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Root />
-  </React.StrictMode>
+    </React.StrictMode>,
+  document.getElementById('root')
 );
+
