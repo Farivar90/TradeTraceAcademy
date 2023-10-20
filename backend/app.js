@@ -56,7 +56,7 @@ app.use((req, res, next) => {
 const serverErrorLogger = debug('backend:error');
 
 app.use((err, req, res, next) => {
-  serverErrorLogger(err);
+  // serverErrorLogger(err);
   const statusCode = err.statusCode || 500;
   res.status(statusCode);
   res.json({
