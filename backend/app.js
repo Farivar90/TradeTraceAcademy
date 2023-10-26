@@ -7,6 +7,7 @@ const logger = require('morgan');
 const debug = require('debug');
 const cors = require('cors');
 const csurf = require('csurf');
+
 const { isProduction } = require('./config/keys');
 
 require('./models/User');
@@ -24,14 +25,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(passport.initialize());
 
-// Security Middleware
-if (!isProduction) {
-  // Enable CORS only in development because React will be on the React
-  // development server (http://localhost:3000). (In production, React files
-  // will be served statically on the Express server.)
-  app.use(cors());
-}
-
 // Set the _csrf token and create req.csrfToken method to generate a hashed
 // CSRF token
 app.use(
@@ -44,30 +37,42 @@ app.use(
   })
 );
 
-if (isProduction) {
-  const path = require('path');
-
-  app.get('/', (req, res) => {
-          res.cookie('CSRF-TOKEN', req.csrfToken());
-          res.sendFile(
-          path.resolve(__dirname, '../frontend', 'build', 'index.html')
-      );
-  });
-
-  app.use(express.static(path.resolve("../frontend/build")));
-  
-  app.get(/^(?!\/?api).*/, (req, res) => {
-      res.cookie('CSRF-TOKEN', req.csrfToken());
-      
-      res.sendFile(
-          path.resolve(__dirname, '../frontend', 'build', 'index.html')
-      );
-  });
+// Security Middleware
+if (!isProduction) {
+  // Enable CORS only in development because React will be on the React
+  // development server (http://localhost:3000). (In production, React files
+  // will be served statically on the Express server.)
+  app.use(cors());
 }
 
 // Attach Express routers
 app.use('/api/users', usersRouter);
 app.use('/api/csrf', csrfRouter);
+
+if (isProduction) {
+  const path = require('path');
+  // Serve the frontend's index.html file at the root route
+  app.get('/', (req, res) => {
+    res.cookie('CSRF-TOKEN', req.csrfToken());
+    res.sendFile(
+      path.resolve(__dirname, '../frontend', 'build', 'index.html')
+    );
+  });
+
+  // Serve the static assets in the frontend's build folder
+  app.use(express.static(path.resolve("../frontend/build")));
+
+  // Serve the frontend's index.html file at all other routes NOT starting with /api
+  app.get(/^(?!\/?api).*/, (req, res) => {
+    res.cookie('CSRF-TOKEN', req.csrfToken());
+    res.sendFile(
+      path.resolve(__dirname, '../frontend', 'build', 'index.html')
+    );
+  });
+}
+
+
+
 
 app.use((req, res, next) => {
   const err = new Error('Not Found');
@@ -87,8 +92,6 @@ app.use((err, req, res, next) => {
     errors: err.errors
   })
 });
-
-
 
 
 module.exports = app;
