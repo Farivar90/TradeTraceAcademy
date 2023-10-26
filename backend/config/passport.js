@@ -38,7 +38,7 @@ exports.loginUser = async function(user) {
     { expiresIn: 3600 } // Tell the key to expire in one hour
   );
   return {
-    user: userInfo,
+    user: {user: userInfo},
     token
   };
 };
