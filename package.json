@@ -2,7 +2,6 @@
   "name": "TradeTraceAcademy",
   "version": "1.0.0",
   "description": "Learning Today, Leading Tomorrow's Trades- an app to learn FOREX",
-  "main": "index.js",
   "scripts": {
     "backend-install": "npm install --prefix backend",
     "backend": "npm run dev --prefix backend",
