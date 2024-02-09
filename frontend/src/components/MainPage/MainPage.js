@@ -63,19 +63,26 @@ function MainPage() {
             {/* <div className='bg-main'> */}
                 {/* <img src={bg} alt="Federal Reserve Building" /> */}
                 {/* <div className="bg-overlay" ref={overlayRef}></div> */}
-                <div>
-                <div
+            <div
                 className="parallax-image"
                 style={{ backgroundImage: `url(${gg})` }}
-                alt='Federal Reserve Building'
-            ></div>
+                alt='Mainbg'
+            >
+                <div className='i-mainbg'>
+                    <h1>Master Forex Trading with Trade Trace Academy.</h1>
+                    <h4>Your One-Stop Hub for Forex Education, Discussion, and Up-to-the-Minute News.</h4>
+                </div>
+            </div>
             <div
                 className="parallax-image"
                 style={{ backgroundImage: `url(${bg})` }}
                 alt='Federal Reserve Building'
-            ></div>
-                  <h1 className='info-mainbg' ref={infoRef}>the Marriner S. Eccles Federal Reserve Board Building</h1>
+            >
+                <div className='info-mainbg'>
+                    <h1>the Marriner S. Eccles Federal Reserve Board Building</h1>
                 </div>
+            </div>
+
             {/* </div> */}
             <div className='main-t1'>
                 <h1 className='name-main'>

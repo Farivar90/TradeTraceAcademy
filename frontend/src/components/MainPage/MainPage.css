@@ -38,11 +38,30 @@
     height: auto;
 }
 
-.info-mainbg {
-  opacity: 0; /* Initially hidden */
+.i-mainbg {
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  top: 70%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  top: 30%;
+  width: 95%;
+  padding: 5px;
+  z-index: 1;
+  font-size: 350%;
+  font-weight: bold;
+}
+
+.i-mainbg h4 {
+  color: rgb(1, 109, 216);
+  font-weight: bold;
+  font-size: 80%;
+  text-align: center;
+  margin: 10%;
+}
+
+.info-mainbg {
+  transition: opacity 0.5s ease; /* Smooth transition */
+  position: absolute;
   color: aliceblue;
   text-align: center;
   width: 95%;
