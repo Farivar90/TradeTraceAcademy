@@ -41,22 +41,34 @@
 .i-mainbg {
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  color: rgb(255, 255, 255);
   text-align: center;
   top: 30%;
   width: 95%;
   padding: 5px;
   z-index: 1;
-  font-size: 350%;
+  font-size: 400%;
   font-weight: bold;
+
+  /* Gradient background */
+  background: linear-gradient(to right, rgb(71, 249, 77), rgb(0, 115, 255));
+
+  /* Making the text transparent and clipping the background to the text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
-.i-mainbg h4 {
-  color: rgb(1, 109, 216);
-  font-weight: bold;
-  font-size: 80%;
+
+
+.ii-mainbg {
+  color: rgb(255, 255, 255) !important;
   text-align: center;
-  margin: 10%;
+  width: 95%;
+  padding: 5px;
+  z-index: 1;
+  font-size: 50%;
+  font-weight: bold;
 }
 
 .info-mainbg {

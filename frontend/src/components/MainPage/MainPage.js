@@ -5,7 +5,6 @@ import gg from '../../assets/gg.webp';
 import lessons from '../../assets/lessons.gif'
 import forum from '../../assets/forum.gif'
 import news from '../../assets/news.gif'
-import LogoSVG from '../Loading/Logo';
 import { Link } from 'react-router-dom';
 import ecb from '../../assets/ecb.jpg';
 import sft from '../../assets/sft.png';
@@ -70,7 +69,9 @@ function MainPage() {
             >
                 <div className='i-mainbg'>
                     <h1>Master Forex Trading with Trade Trace Academy.</h1>
+                <div className='ii-mainbg'>
                     <h4>Your One-Stop Hub for Forex Education, Discussion, and Up-to-the-Minute News.</h4>
+                </div>
                 </div>
             </div>
             <div
