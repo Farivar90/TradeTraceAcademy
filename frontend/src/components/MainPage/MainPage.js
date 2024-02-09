@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './MainPage.css';
 import bg from '../../assets/fed-day.jpg';
+import gg from '../../assets/gg.webp';
 import lessons from '../../assets/lessons.gif'
 import forum from '../../assets/forum.gif'
 import news from '../../assets/news.gif'
@@ -63,6 +64,11 @@ function MainPage() {
                 {/* <img src={bg} alt="Federal Reserve Building" /> */}
                 {/* <div className="bg-overlay" ref={overlayRef}></div> */}
                 <div>
+                <div
+                className="parallax-image"
+                style={{ backgroundImage: `url(${gg})` }}
+                alt='Federal Reserve Building'
+            ></div>
             <div
                 className="parallax-image"
                 style={{ backgroundImage: `url(${bg})` }}
@@ -128,7 +134,8 @@ function MainPage() {
                 className="parallax-image"
                 style={{ backgroundImage: `url(${sft})` }}
                 alt='SFT'>
-            <div className="bg-overlay" ref={sftOverlayRef}></div>
+            <div className="bg-overlay" ref={sftOverlayRef}>
+            </div>
                 <h1 className='info-mainbg2' ref={sftInfoRef}>Shanghai World Financial Center</h1>
             </div>
                 <h1 id='cube-info'> 
