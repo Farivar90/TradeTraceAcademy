@@ -62,9 +62,10 @@
 .info-mainbg {
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  color: aliceblue;
+  color: rgb(0, 251, 255);
   text-align: center;
   width: 95%;
+  margin-top: 20%;
   padding: 5px;
   z-index: 1;
   font-size: 270%;
@@ -77,6 +78,7 @@
   position: absolute;
   color: rgb(3, 3, 3);
   text-align: center;
+  margin-top: 20%;
   width: 95%;
   padding: 5px;
   z-index: 1;
@@ -90,6 +92,7 @@
   position: absolute;
   color: rgb(255, 255, 255);
   text-align: center;
+  margin-top: 20%;
   width: 95%;
   padding: 5px;
   z-index: 1;

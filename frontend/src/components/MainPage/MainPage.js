@@ -83,36 +83,6 @@ function MainPage() {
                 </div>
             </div>
 
-            {/* </div> */}
-            <div className='main-t1'>
-                <h1 className='name-main'>
-                    TradeTrace Academy
-                    {/* <div className='logo-svg'>
-                        < LogoSVG aria-hidden="true"/>
-                    </div> */}
-                </h1>
-                {showSlogan && (
-                    <h2 className='slogan-main tracking-in-expand'>
-                        A Trace Today, A Trade Tomorrow
-                    </h2>
-                )}
-                {!showSlogan && (
-                    <h2 className='slogan-main tracking-out-contract'>
-                        A Trace Today, A Trade Tomorrow
-                    </h2>
-                )}
-            <div>
-            <div
-                className="parallax-image"
-                style={{ backgroundImage: `url(${ecb})` }}
-                alt='ECB'>
-            <div className="bg-overlay" ref={ecbOverlayRef}></div>
-                <h1 className='info-mainbg1' ref={ecbInfoRef}>Seat of the European Central Bank</h1>
-            </div>
-
-            </div>
-
-            </div>
             <nav className='main-cards-1st' aria-label="Main Navigation">
                 <div className="card1">
                     <Link to="/lessons" className="no-underline">
@@ -137,6 +107,38 @@ function MainPage() {
                 </div>
             </nav>
             <div className='after-c'></div>
+            {/* </div> */}
+            
+            <div>
+                <div
+                    className="parallax-image"
+                    style={{ backgroundImage: `url(${ecb})` }}
+                    alt='ECB'>
+                <div className="bg-overlay" ref={ecbOverlayRef}></div>
+                <h1 className='info-mainbg1' ref={ecbInfoRef}>Seat of the European Central Bank</h1>
+            </div>
+
+            </div>
+
+            <div className='main-t1'>
+                <h1 className='name-main'>
+                    TradeTrace Academy
+                    {/* <div className='logo-svg'>
+                        < LogoSVG aria-hidden="true"/>
+                    </div> */}
+                </h1>
+                {showSlogan && (
+                    <h2 className='slogan-main tracking-in-expand'>
+                        A Trace Today, A Trade Tomorrow
+                    </h2>
+                )}
+                {!showSlogan && (
+                    <h2 className='slogan-main tracking-out-contract'>
+                        A Trace Today, A Trade Tomorrow
+                    </h2>
+                )}
+                </div>
+
             <div
                 className="parallax-image"
                 style={{ backgroundImage: `url(${sft})` }}
