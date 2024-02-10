@@ -58,9 +58,9 @@ function LoginForm() {
               <label>
                 <input type="checkbox" /> Remember me
               </label>
-              {/* <label>
+              <label>
                 <a href="#">Forgot password?</a>
-              </label> */}
+              </label>
             </div>
             <button className='button-ses' disabled={!email || !password}>Log in</button>
             <div className="register">
