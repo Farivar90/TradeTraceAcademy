@@ -44,6 +44,8 @@
   text-align: center;
   top: 30%;
   width: 95%;
+  margin-left: 3%;
+  margin-right: 3%;
   padding: 5px;
   z-index: 1;
   font-size: 400%;
@@ -61,9 +63,10 @@
 
 
 
-.ii-mainbg {
+#ii-mainbg {
   color: rgb(255, 255, 255) !important;
   text-align: center;
+  margin-top: 5%;
   width: 95%;
   padding: 5px;
   z-index: 1;
@@ -74,10 +77,10 @@
 .info-mainbg {
   transition: opacity 0.5s ease; /* Smooth transition */
   position: absolute;
-  color: rgb(0, 251, 255);
+  color: rgb(255, 255, 255);
   text-align: center;
   width: 95%;
-  margin-top: 20%;
+  margin-top: 2%;
   padding: 5px;
   z-index: 1;
   font-size: 270%;
@@ -90,7 +93,7 @@
   position: absolute;
   color: rgb(3, 3, 3);
   text-align: center;
-  margin-top: 20%;
+  margin-top: 2%;
   width: 95%;
   padding: 5px;
   z-index: 1;
@@ -104,7 +107,7 @@
   position: absolute;
   color: rgb(255, 255, 255);
   text-align: center;
-  margin-top: 20%;
+  margin-top: 2%;
   width: 95%;
   padding: 5px;
   z-index: 1;

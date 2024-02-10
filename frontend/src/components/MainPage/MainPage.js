@@ -69,7 +69,7 @@ function MainPage() {
             >
                 <div className='i-mainbg'>
                     <h1>Master Forex Trading with Trade Trace Academy.</h1>
-                <div className='ii-mainbg'>
+                <div id='ii-mainbg'>
                     <h4>Your One-Stop Hub for Forex Education, Discussion, and Up-to-the-Minute News.</h4>
                 </div>
                 </div>
