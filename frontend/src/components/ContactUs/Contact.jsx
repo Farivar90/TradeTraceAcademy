@@ -5,7 +5,7 @@ import FAlogo from '../../assets/FA-logo-t.png';
 import FAlogoSvg from '../../assets/FA-logo-svg.svg';
 
 
-const ContactUs = () => {
+function ContactUs() {
     return (
         <div className='contact-us'>
             <div className="imageContainer">
