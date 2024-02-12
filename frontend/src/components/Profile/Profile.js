@@ -11,15 +11,10 @@ const Profile = () => {
 
     return (
         <div className="introduction-to-forex-page">
-            {/* <section className="forex-parallax">
-                <h2 id="forex-text">FOREX</h2>
-                <img src={m1} id="forex-m1" alt="Mountain 1"/>
-                <img src={t2} id="forex-t2" alt="Trees 2"/>
-                <img src={m2} id="forex-m2" alt="Mountain 2"/>
-                <img src={t1} id="forex-t1" alt="Trees 1"/>
-                <img src={man} id="forex-man" alt="Man"/>
-                <img src={plants} id="forex-plants" alt="Plants"/>
-            </section> */}
+            <div className="itf-container">
+                <h1>Forex</h1>
+                <h4>Under Construction</h4>
+            </div>
             <section className="forex-sec">
                 <h2>Under Construction</h2>
                

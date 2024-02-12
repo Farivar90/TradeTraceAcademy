@@ -32,6 +32,7 @@ import Forum from './components/Forum/Forum';
 import ContactUs from './components/ContactUs/Contact';
 import CurrencyMap from './components/CurrencyMap/CurrencyMap';
 import Events from './components/Events/Events';
+import About from './components/AboutUs/About';
 import './App.css';
 
 function App() {
@@ -97,6 +98,7 @@ function App() {
             <Route exact path="/ContactUs" component={ContactUs} />
             <Route exact path="/CurrencyMap" component={CurrencyMap} />
             <Route exact path="/events" component={Events} />
+            <Route exact path="/AboutUs" component={About} />
             <ProtectedRoute exact path="/profile" component={Profile} />
             <Redirect to="/" />
           </Switch>
@@ -114,7 +116,14 @@ function App() {
       ) : (
         <AnimatedSVG />
       )}
-       <footer className="footer-m">&copy; 2023 F.A Financial Department</footer>
+      <footer className="footer-m">
+        <button
+          onClick={About}
+        >
+          <span className="fas fa-angle-up" style={{fontSize: '32px', color: 'white'}}></span>
+        </button>
+        &copy; 2023 F.A Financial Department
+      </footer>
     </>
   );
 }
