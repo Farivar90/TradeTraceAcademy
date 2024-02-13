@@ -105,3 +105,26 @@
     }
   }
   
+  .footer-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #363636; /* Adjust the color as per your theme */
+    color: white;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .aboutusico {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-m p {
+    margin: 0; /* Removes default margin */
+  }
+  

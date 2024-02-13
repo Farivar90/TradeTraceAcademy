@@ -121,11 +121,12 @@ function App() {
         <AnimatedSVG />
       )}
       <footer className="footer-m">
-        <button className="aboutUs"
-          onClick={openModal}
-        >AboutUs
-          <span className="fas fa-angle-up" style={{fontSize: '32px', color: 'white'}}></span>
-        </button>
+        <div className="aboutusico" onClick={openModal}>
+          <span 
+            className="fa fa-info-circle" style={{fontSize: '150%', color: 'white'}}>
+          </span>
+        </div>
+
         &copy; 2023 F.A Financial Department
       </footer>
       <Modal showModal={showModal} closeModal={closeModal}>
