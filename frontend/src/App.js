@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Switch, Redirect, Route} from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from './components/Routes/Routes';
@@ -33,12 +33,16 @@ import ContactUs from './components/ContactUs/Contact';
 import CurrencyMap from './components/CurrencyMap/CurrencyMap';
 import Events from './components/Events/Events';
 import About from './components/AboutUs/About';
+import Modal from './components/Modal/Modal';
 import './App.css';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
   const [showButton, setShowButton] = useState(false); // State to control button visibility
   const dispatch = useDispatch();
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
 
   useEffect(() => {
     dispatch(getCurrentUser()).then(() => setLoaded(true));
@@ -117,13 +121,16 @@ function App() {
         <AnimatedSVG />
       )}
       <footer className="footer-m">
-        <button
-          onClick={About}
-        >
+        <button className="aboutUs"
+          onClick={openModal}
+        >AboutUs
           <span className="fas fa-angle-up" style={{fontSize: '32px', color: 'white'}}></span>
         </button>
         &copy; 2023 F.A Financial Department
       </footer>
+      <Modal showModal={showModal} closeModal={closeModal}>
+        <About />
+      </Modal>
     </>
   );
 }
