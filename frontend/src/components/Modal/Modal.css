@@ -15,9 +15,9 @@
   
   .modal-content {
     background: white;
-    padding: 20px;
+    padding: 1%;
     border-radius: 8px;
-    width: 300px;
+    width: 60%;
     position: relative;
     animation: slide-down 300ms ease-out forwards;
     justify-items: center;
