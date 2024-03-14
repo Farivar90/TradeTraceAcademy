@@ -30,9 +30,9 @@ const SocialShare = () => {
             <li style={{ '--i': 5, '--clr': '#c32aa3' }}>
                 <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
             </li>
-            <li style={{ '--i': 6, '--clr': '#1b1e21' }}>
+            {/* <li style={{ '--i': 6, '--clr': '#1b1e21' }}>
                 <a href="#"><ion-icon name="logo-github"></ion-icon></a>
-            </li>
+            </li> */}
             <li style={{ '--i': 7, '--clr': '#0a66c2' }}>
                 <a href="#"><ion-icon name="paper-plane"></ion-icon></a>
             </li>
